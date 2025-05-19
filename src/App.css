@@ -1,0 +1,202 @@
+/* 🎨 Custom Theme Colors */
+:root {
+  --primary-color: #5D3FD3;  /* Deep purple */
+  --accent-color: #8A2BE2;  /* Vibrant violet */
+  --secondary-color: #4B0082; /* Rich indigo */
+  --background-light: #F8F9FA; /* Soft white */
+  --text-dark: #212529; /* Deep gray */
+  --tech-blue: #3D3FB3; /* Techy blue */
+  --highlight: #FFD700; /* Gold highlight */
+}
+
+/* 🖥️ General Styles */
+body {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  color: var(--text-dark);
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* 🔥 Floating Tech Icons */
+.floating-icon {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--tech-blue);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ⚙️ Rotating Rings */
+.spinner-blue {
+  color: var(--tech-blue);
+  width: 120px;
+  height: 120px;
+  animation-duration: 2s;
+}
+
+.spinner-purple {
+  color: var(--accent-color);
+  width: 160px;
+  height: 160px;
+  animation-duration: 3s;
+}
+
+/* 🌟 Smooth Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 🎬 Hover Effects */
+.icon-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* 🌍 Parallax Effect */
+.parallax-section {
+  background-image: url('/your-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* ✨ Pulse Effect */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation: pulse 3s infinite;
+}
+
+/* 🛠️ Wrench & Gear Colors */
+.bg-purple {
+  background-color: var(--accent-color) !important;
+}
+
+.text-purple {
+  color: var(--accent-color) !important;
+}
+/* 🌊 Ripple Container */
+.ripple-container {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+/* 🔥 Ripple Animation */
+.ripple {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(138,43,226,0.4) 30%, transparent 70%);
+  animation: rippleEffect 6s infinite ease-in-out;
+}
+
+/* 💡 Smooth Color Flow */
+@keyframes rippleEffect {
+  0% { transform: scale(0.8); opacity: 0.7; background: rgba(204,204,255,0.4); } /* Periwinkle */
+  30% { transform: scale(1); opacity: 0.6; background: rgba(61,63,179,0.4); } /* Blue */
+  60% { transform: scale(1.2); opacity: 0.5; background: rgba(138,43,226,0.4); } /* Purple */
+  100% { transform: scale(1.4); opacity: 0.3; background: rgba(255,215,0,0.4); } /* Gold */
+}
+/* 🌟 Enable dropdowns on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 🔥 Smooth fade-in effect */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-5px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+/* 🎨 Translucent purple background */
+.dropdown-menu {
+  position: fixed !important;
+  top: 70px;
+  left: 0;
+  width: 100vw !important; /* Full screen width */
+  background: rgba(138, 43, 226, 0.8) !important; /* Translucent purple */
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 0 20px 20px 0; /* Smooth right edge */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.dropdown-items {
+  flex: 1; /* Allows text to take full width */
+}
+
+.dropdown-image {
+  width: 350px; /* Adjust to your preferred size */
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+.dropdown-image img {
+  width: 100%; /* Ensures full size within the container */
+  border-radius: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(75, 0, 130, 0.8) !important; /* Dark Purple */
+  color: white !important; /* Ensures text stays visible */
+  border-radius: 8px; /* Optional: Smooth rounded effect */
+}
+
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
