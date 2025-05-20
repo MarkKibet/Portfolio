@@ -185,6 +185,17 @@ body {
   color: white !important; /* Ensures text stays visible */
   border-radius: 8px; /* Optional: Smooth rounded effect */
 }
+.hover-glow:hover {
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);
+  border: 2px solid rgba(0, 255, 255, 0.5);
+}
+.btn-glow {
+  background: linear-gradient(135deg, #00f2ff, #0068ff);
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.4);
+}
 
 
 
