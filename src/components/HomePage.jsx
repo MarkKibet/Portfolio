@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 import { ChevronDown, Code, Phone, Globe, Zap, Database, Cloud, LineChart, ShieldCheck, Layers } from "lucide-react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 // import ""; // Ensure the correct path
@@ -451,7 +451,6 @@ function Navbar() {
   );
 }
 
-// HomePage Component
 function HomePage() {
   return (
     <>
@@ -461,7 +460,6 @@ function HomePage() {
       <ProjectShowcase />
       <TechProcess />
       <TestimonialSection />
-      
       <StatsCounter />
       <BlogSection />
       <CtaSection />
