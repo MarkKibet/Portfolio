@@ -493,7 +493,7 @@ function HeroBanner() {
       </div>
       
       <div className="container py-5 position-relative">
-        <div className="row align-items-center min-vh-75" style={{ minHeight: '85vh' }}>
+        <div className="row align-items-center min-vh-75" style={{ minHeight: '75vh' }}>
           <div className="col-lg-6 py-5" data-aos="fade-right">
             
             
@@ -506,12 +506,19 @@ function HeroBanner() {
   Empowering Your Digital Journey
 </h1>
 
-<p className="lead mb-4 text-muted-light" style={{ fontSize: '1.3rem' }}>
-  At CinqueLabs, we craft innovative technological solutions designed to drive growth, 
+
+<p className="lead mb-4 text-muted-light fw-bold mb-3" style={{ fontSize: '1.3rem' }}>
+
+  <strong>
+ At CinqueLabs, we craft innovative technological solutions designed to drive growth, 
   boost efficiency, and help businesses thrive in an evolving digital landscape. 
+  </strong>
+ 
 </p>
 
-<p className="lead mb-4 text-muted-light" style={{ fontSize: '1.3rem' }}>
+
+
+<p className="lead mb-4 text-muted-light fw-bold mb-3" style={{ fontSize: '1.3rem' }}>
   From concept to reality, we engineer digital experiences that maximize potential, 
   enhance interactivity, and unlock limitless opportunities.
 </p>

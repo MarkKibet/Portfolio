@@ -91,25 +91,55 @@ body {
 
 /* 🔥 Ripple Animation */
 .ripple {
-  position: absolute;
-  width: 200px;
-  height: 200px;
+  position: fixed;
+  width: 1400px;
+  height: 1400px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(138,43,226,0.4) 30%, transparent 70%);
-  animation: rippleEffect 6s infinite ease-in-out;
+  background: radial-gradient(circle, rgba(70, 70, 145, 0.85) 10%, rgba(61,63,179,0.7) 35%, rgba(138,43,226,0.6) 60%, transparent 100%);
+  box-shadow: 
+    0 0 150px rgba(50, 50, 122, 0.9),
+    0 0 230px rgba(61,63,179,0.8),
+    0 0 300px rgba(138,43,226,0.7),
+    inset 0 0 80px rgba(69, 69, 153, 0.8);
+  filter: blur(3px);
+  animation: rippleEffect 5s infinite ease-in-out alternate, glowPulse 2.5s infinite ease-in-out, energyFlow 7s infinite linear, distortionEffect 4s infinite linear alternate;
 }
 
-/* 💡 Smooth Color Flow */
+/* ⚡ AI-Powered Ripple Scaling */
 @keyframes rippleEffect {
-  0% { transform: scale(0.8); opacity: 0.7; background: rgba(204,204,255,0.4); } /* Periwinkle */
-  30% { transform: scale(1); opacity: 0.6; background: rgba(61,63,179,0.4); } /* Blue */
-  60% { transform: scale(1.2); opacity: 0.5; background: rgba(138,43,226,0.4); } /* Purple */
-  100% { transform: scale(1.4); opacity: 0.3; background: rgba(255,215,0,0.4); } /* Gold */
+  0% { transform: scale(0.7); opacity: 0.95; background: rgba(74, 74, 145, 0.75); }
+  25% { transform: scale(1); opacity: 0.85; background: rgba(61,63,179,0.65); }
+  50% { transform: scale(1.5); opacity: 0.75; background: rgba(138,43,226,0.6); }
+  100% { transform: scale(1.8); opacity: 0.65; background: rgba(75, 75, 139, 0.55); }
 }
+
+/* 🔥 Energy Waves */
+@keyframes energyFlow {
+  0% { filter: brightness(0.9) blur(4px); transform: rotate(0deg); }
+  50% { filter: brightness(1.1) blur(8px); transform: rotate(180deg); }
+  100% { filter: brightness(0.9) blur(4px); transform: rotate(360deg); }
+}
+
+/* 🌊 Electromagnetic Distortions */
+@keyframes distortionEffect {
+  0% { transform: scale(1) skewX(2deg) skewY(2deg); }
+  50% { transform: scale(1.05) skewX(5deg) skewY(-5deg); }
+  100% { transform: scale(1) skewX(2deg) skewY(2deg); }
+}
+
+/* ✨ Glow Pulse */
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 180px rgba(57, 57, 121, 0.95), 0 0 250px rgba(61,63,179,0.85); }
+  50% { box-shadow: 0 0 230px rgb(77, 77, 175), 0 0 320px rgba(138,43,226,0.8); }
+  100% { box-shadow: 0 0 180px rgba(50, 50, 114, 0.95), 0 0 250px rgba(61,63,179,0.85); }
+}
+
+
+
 /* 🌟 Enable dropdowns on hover */
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
-  animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.10s ease-in-out;
 }
 
 /* 🔥 Smooth fade-in effect */
