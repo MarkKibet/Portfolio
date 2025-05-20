@@ -459,7 +459,9 @@ function HomePage() {
       <ProjectShowcase />
       <TechProcess />
       <TestimonialSection />
+      
       <StatsCounter />
+      <BlogSection />
       <CtaSection />
     </>
   );
@@ -911,6 +913,117 @@ function TestimonialSection() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// BlogsSection Component
+// BlogSection Component - Add this to your HomePage.jsx file
+function BlogSection() {
+  const blogPosts = [
+    {
+      id: 1,
+      image: "/digital-transformation--a-strategic-guide-for-busi.jpg",
+      title: "Digital Transformation: A Strategic Guide for Businesses in 2025",
+      category: "Digital Strategy",
+      date: "May 15, 2025",
+      excerpt: "Explore how businesses can successfully navigate digital transformation initiatives with our comprehensive guide."
+    },
+    {
+      id: 2,
+      image: "/top-10-ai-trends-reshaping-software-development-di.jpg",
+      title: "Top 10 AI Trends Reshaping Software Development",
+      category: "Artificial Intelligence",
+      date: "May 8, 2025",
+      excerpt: "Discover the latest artificial intelligence innovations transforming how we build and deploy software solutions."
+    },
+    {
+      id: 3,
+      image: "/cloud-security-best-practices-for-enterprise-appli.jpg",
+      title: "Cloud Security Best Practices for Enterprise Applications",
+      category: "Cloud & Security",
+      date: "May 1, 2025",
+      excerpt: "Learn essential strategies to protect your enterprise applications in multi-cloud environments."
+    }
+  ];
+
+  return (
+    <section className="py-5 position-relative overflow-hidden" style={{ backgroundColor: 'var(--light)' }}>
+      {/* Background elements */}
+      <div className="position-absolute w-100 h-100" style={{ top: 0, left: 0, overflow: 'hidden', opacity: 0.05 }}>
+        <div className="position-absolute" style={{ 
+          width: '500px', 
+          height: '500px', 
+          borderRadius: '50%', 
+          filter: 'blur(50px)',
+          background: 'var(--gradient-purple)',
+          animation: 'float 15s ease-in-out infinite',
+          top: '50%',
+          right: '-100px'
+        }}></div>
+        <div className="position-absolute" style={{ 
+          width: '400px', 
+          height: '400px', 
+          borderRadius: '50%', 
+          filter: 'blur(50px)',
+          background: 'var(--gradient-accent)',
+          animation: 'float 12s ease-in-out infinite reverse',
+          bottom: '10%',
+          left: '10%'
+        }}></div>
+      </div>
+      
+      <div className="container py-5 position-relative">
+        <div className="text-center mb-5" data-aos="fade-up">
+          <h6 className="text-uppercase fw-bold" style={{ color: 'var(--primary)' }}>Knowledge Hub</h6>
+          <h2 className="display-5 fw-bold">Our Latest Insights</h2>
+          <div className="mx-auto" style={{ width: '100px', height: '3px', background: 'var(--gradient-primary)' }}></div>
+          <p className="lead mt-3">Stay updated with industry trends, technologies, and expert insights</p>
+        </div>
+
+        <div className="row g-4">
+          {blogPosts.map((post) => (
+            <div key={post.id} className="col-md-4" data-aos="fade-up" data-aos-delay={(post.id - 1) * 100}>
+              <div className="card h-100 border-0 shadow-sm hover-lift" style={{ borderRadius: '16px', overflow: 'hidden' }}>
+                <div className="position-relative">
+                  <img 
+                    src={post.image} 
+                    className="card-img-top" 
+                    alt={post.title}
+                    style={{ height: '200px', objectFit: 'cover' }}
+                  />
+                  <div className="position-absolute top-0 start-0 m-3">
+                    <span className="badge" style={{ background: 'var(--gradient-blue)', borderRadius: '30px' }}>
+                      {post.category}
+                    </span>
+                  </div>
+                </div>
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-center mb-3">
+                    <small className="text-muted">
+                      <i className="bi bi-calendar me-2"></i>
+                      {post.date}
+                    </small>
+                  </div>
+                  <h5 className="card-title fw-bold mb-3">{post.title}</h5>
+                  <p className="card-text text-muted mb-4">{post.excerpt}</p>
+                  <a href={`/blog/${post.id}`} className="btn px-4 py-2 text-white" 
+                     style={{ background: 'var(--gradient-primary)', borderRadius: '30px' }}>
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="text-center mt-5" data-aos="fade-up">
+          <a href="/blog" className="btn btn-lg px-4 py-3 fw-medium" 
+             style={{ border: '2px solid var(--primary)', color: 'var(--primary)', borderRadius: '50px' }}>
+            View All Articles
+          </a>
         </div>
       </div>
     </section>
