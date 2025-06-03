@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { ChevronDown, Code, Phone, Globe, Zap, Database, Cloud, LineChart, ShieldCheck, Layers } from "lucide-react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Route, Link } from 'react-router-dom';
+import ReactJS from "./ReactJS.jsx";
 // import ""; // Ensure the correct path
 
-
+<Route path="/ReactJS" element={<ReactJS />} />
 
 // Custom CSS for futuristic design with improved text visibility
 const GlobalStyles = () => {
@@ -396,12 +398,23 @@ function Navbar() {
     <div className="row">
        <div className="col-md-6"> 
        <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Frontend Development</a></li>
+       <li><Link to="/ReactJS" className="dropdown-menu-item py-3 fw-bold text-light">React.JS</Link></li>
+       <li>Angular.JS</li>
+       <li>Vue.JS</li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Backend Systems</a></li>
+    <li>Node.JS</li>
+    <li>Python</li>
+    <li>Java</li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Cloud Services</a></li>
+    <li>AWS</li>
+    <li>Azure</li>
+    <li>Google Cloud</li>
      </div>
    <div className="col-md-6">
      <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Data Analytics</a></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Artificial Intelligence</a></li>
+    <li>TensorFlow</li>
+    <li>PyTorch</li>
     </div> 
        </div>
     
