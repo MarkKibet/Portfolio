@@ -2,10 +2,6 @@ import { useEffect, useState } from "react";
 import { ChevronDown, Code, Phone, Globe, Zap, Database, Cloud, LineChart, ShieldCheck, Layers } from "lucide-react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Route, Link } from 'react-router-dom';
-import ReactJS from "./ReactJS.jsx";
-// import ""; // Ensure the correct path
-
-<Route path="/ReactJS" element={<ReactJS />} />
 
 // Custom CSS for futuristic design with improved text visibility
 const GlobalStyles = () => {
@@ -399,8 +395,8 @@ function Navbar() {
        <div className="col-md-6"> 
        <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Frontend Development</a></li>
        <li><Link to="/ReactJS" className="dropdown-menu-item py-3 fw-bold text-light">React.JS</Link></li>
-       <li>Angular.JS</li>
-       <li>Vue.JS</li>
+       <li><Link to="/Angular" className="dropdown-menu-item py-3 fw-bold text-light">Angular</Link></li>
+       <li><Link to="/Vue" className="dropdown-menu-item py-3 fw-bold text-light">Vue</Link></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Backend Systems</a></li>
     <li>Node.JS</li>
     <li>Python</li>

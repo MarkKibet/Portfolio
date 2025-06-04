@@ -6,8 +6,9 @@ import HomePage from "./components/HomePage";
 import BlogsPage from "./components/BlogsPage";
 import BlogPage from "./components/BlogPage";
 import "./App.css";
-import ReactJSPage from "./components/ReactJS";
-import AngularPage from "./components/Angular";
+import ReactJS from "./components/ReactJS.jsx";
+import Angular from "./components/Angular.jsx";
+import Vue from "./components/Vue.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -36,8 +37,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/blog/:id" element={<BlogPage />} />
-        <Route path="/ReactJS" element={<ReactJSPage />} />
-        <Route path="/angular" element={<AngularPage />} />
+        <Route path="/ReactJS" element={<ReactJS />} />
+        <Route path="/Angular" element={<Angular />} />
+        <Route path="/Vue" element={<Vue />} />
       </Routes>
     </Router>
   );
