@@ -1,6 +1,5 @@
 import { Button } from "./ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 import { CheckCircle2 } from "lucide-react";
 
 const ReactJSPage = () => {
@@ -114,7 +113,7 @@ const ReactJSPage = () => {
       </section>
 
       {/* Our Services Section */}
-      <section className="py-6 py-lg-7">
+      <section className="py-6 py-lg-7 mb-6">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-5 fw-bold mb-3">Our React JS Development Services</h2>
