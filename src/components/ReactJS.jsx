@@ -415,7 +415,7 @@ const ReactJSPage = () => {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-5 fw-bold mb-3">Our Development Process</h2>
-            <p className="lead text-muted mx-auto" style={{maxWidth: '700px'}}>
+            <p className="lead text-white-50 mx-auto" style={{maxWidth: '700px'}}>
               A proven methodology that ensures quality and timely delivery
             </p>
           </div>
@@ -427,8 +427,8 @@ const ReactJSPage = () => {
                   <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
                     <span className="fs-4 fw-bold">1</span>
                   </div>
-                  <h4 className="fw-bold mb-3">Discovery</h4>
-                  <p className="text-muted">
+                  <h4 className="fw-bold mb-3 text-white">Discovery</h4>
+                  <p className="text-white-50">
                     We analyze requirements, define scope, and plan the project roadmap.
                   </p>
                 </div>
@@ -440,8 +440,8 @@ const ReactJSPage = () => {
                   <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
                     <span className="fs-4 fw-bold">2</span>
                   </div>
-                  <h4 className="fw-bold mb-3">Design</h4>
-                  <p className="text-muted">
+                  <h4 className="fw-bold mb-3 text-white">Design</h4>
+                  <p className="text-white-50">
                     We create wireframes, prototypes, and UI/UX designs for your approval.
                   </p>
                 </div>
@@ -453,8 +453,8 @@ const ReactJSPage = () => {
                   <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
                     <span className="fs-4 fw-bold">3</span>
                   </div>
-                  <h4 className="fw-bold mb-3">Development</h4>
-                  <p className="text-muted">
+                  <h4 className="fw-bold mb-3 text-white">Development</h4>
+                  <p className="text-white-50">
                     Our developers build your application using Agile sprints with regular demos.
                   </p>
                 </div>
@@ -466,8 +466,8 @@ const ReactJSPage = () => {
                   <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
                     <span className="fs-4 fw-bold">4</span>
                   </div>
-                  <h4 className="fw-bold mb-3">Deployment</h4>
-                  <p className="text-muted">
+                  <h4 className="fw-bold mb-3 text-white">Deployment</h4>
+                  <p className="text-white-50">
                     We deploy the application, provide training, and offer ongoing support.
                   </p>
                 </div>
