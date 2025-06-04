@@ -1,5 +1,3 @@
-import { Button } from "./ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { CheckCircle2 } from "lucide-react";
 
 const AngularPage = () => {
@@ -15,12 +13,12 @@ const AngularPage = () => {
                 Build robust, enterprise-grade web applications with CinqueLabs' expert Angular development. We create scalable, maintainable, and feature-rich solutions.
               </p>
               <div className="d-flex flex-wrap gap-3">
-                <Button className="btn btn-primary btn-lg px-4 py-3">
+                <button className="btn btn-primary btn-lg px-4 py-3">
                   Get Started
-                </Button>
-                <Button className="btn btn-outline-light btn-lg px-4 py-3">
+                </button>
+                <button className="btn btn-outline-light btn-lg px-4 py-3">
                   Learn More
-                </Button>
+                </button>
               </div>
             </div>
             <div className="col-lg-6">
@@ -189,12 +187,12 @@ const AngularPage = () => {
                 We leverage Angular's power to build high-quality applications that deliver business value.
               </p>
               <div className="d-flex flex-wrap gap-3">
-                <Button className="btn btn-danger btn-lg px-4">
+                <button className="btn btn-danger btn-lg px-4">
                   Get a Free Consultation
-                </Button>
-                <Button className="btn btn-outline-light btn-lg px-4">
+                </button>
+                <button className="btn btn-outline-light btn-lg px-4">
                   View Case Studies
-                </Button>
+                </button>
               </div>
             </div>
             <div className="col-lg-6">
@@ -397,12 +395,12 @@ const AngularPage = () => {
               </div>
               
               <div className="mt-5">
-                <Button className="btn btn-danger btn-lg px-4 me-3">
+                <button className="btn btn-danger btn-lg px-4 me-3">
                   Hire Developers
-                </Button>
-                <Button className="btn btn-outline-secondary btn-lg px-4">
+                </button>
+                <button className="btn btn-outline-secondary btn-lg px-4">
                   View Profiles
-                </Button>
+                </button>
               </div>
             </div>
           </div>
@@ -564,12 +562,12 @@ const AngularPage = () => {
                 Discuss your project requirements with our Angular experts and get a tailored solution.
               </p>
               <div className="d-flex flex-wrap justify-content-center gap-3">
-                <Button className="btn btn-light btn-lg px-5 text-danger">
+                <button className="btn btn-light btn-lg px-5 text-danger">
                   Request a Quote
-                </Button>
-                <Button className="btn btn-outline-light btn-lg px-5">
+                </button>
+                <button className="btn btn-outline-light btn-lg px-5">
                   Book a Consultation
-                </Button>
+                </button>
               </div>
             </div>
           </div>

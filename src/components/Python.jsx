@@ -1,6 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
 
-const VueJSPage = () => {
+const PythonPage = () => {
   return (
     <div className="font-sans">
       {/* Hero Section */}
@@ -8,12 +8,12 @@ const VueJSPage = () => {
         <div className="container position-relative z-index-2">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-5 mb-lg-0">
-              <h1 className="display-4 fw-bold mb-4">Vue.js Development Services</h1>
+              <h1 className="display-4 fw-bold mb-4">Python Development Services</h1>
               <p className="lead mb-5">
-                Craft progressive and incrementally adoptable web interfaces with CinqueLabs' expert Vue.js development. We build lightweight, high-performance, and versatile applications.
+                Unlock the power of Python with CinqueLabs. We deliver robust, scalable, and high-performance Python solutions for web, data, and automation.
               </p>
               <div className="d-flex flex-wrap gap-3">
-                <button className="btn btn-success btn-lg px-4 py-3">
+                <button className="btn btn-primary btn-lg px-4 py-3">
                   Get Started
                 </button>
                 <button className="btn btn-outline-light btn-lg px-4 py-3">
@@ -24,84 +24,84 @@ const VueJSPage = () => {
             <div className="col-lg-6">
               <div className="position-relative">
                 <img 
-                  src="https://vuejs.org/images/logo.png" 
-                  alt="Vue.js Development" 
+                  src="https://www.python.org/static/community_logos/python-logo.png" 
+                  alt="Python Development" 
                   className="img-fluid rounded-3 shadow-lg"
-                  style={{maxHeight: '350px', objectFit: 'contain'}}
+                  style={{ background: "#fff", padding: "1rem" }}
                 />
-                <div className="position-absolute top-0 start-0 w-100 h-100 bg-success opacity-10 rounded-3"></div>
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-3"></div>
               </div>
             </div>
           </div>
         </div>
         <div className="position-absolute top-0 end-0 h-100 w-50 d-none d-lg-block">
           <div className="h-100 w-100 bg-cover bg-center opacity-20" 
-               style={{backgroundImage: "url('https://res.cloudinary.com/practicaldev/image/fetch/s--I4FWon9Y--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/s5ad2u0s3t8x704en90x.png')"}}>
+               style={{backgroundImage: "url('https://miro.medium.com/v2/resize:fit:1400/1*LrjUe1T9Q6kQzA6p8rQe6w.png')"}}>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Vue.js Section */}
+      {/* Why Choose Python Section */}
       <section className="py-6 py-lg-7 bg-light">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 mb-5 mb-lg-0">
               <div className="text-center">
                 <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" 
-                  alt="Vue.js Benefits" 
+                  src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" 
+                  alt="Python Benefits" 
                   className="img-fluid"
-                  style={{maxWidth: '180px'}}
+                  style={{maxWidth: '200px'}}
                 />
               </div>
             </div>
             <div className="col-lg-7">
-              <h2 className="display-5 fw-bold mb-4">Why Choose Vue.js for Your Project?</h2>
+              <h2 className="display-5 fw-bold mb-4">Why Choose Python for Your Project?</h2>
               <p className="fs-5 mb-4 text-muted">
-                Vue.js is a progressive framework known for its simplicity, performance, and flexibility, making it an excellent choice for projects of all sizes.
+                Python is renowned for its simplicity, versatility, and powerful libraries. It's ideal for web development, data science, automation, and more.
               </p>
               <div className="row mt-5">
                 <div className="col-md-6 mb-4">
                   <div className="d-flex">
-                    <div className="me-4 text-success">
+                    <div className="me-4 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="fw-bold">Approachable Syntax</h5>
-                      <p className="mb-0 text-muted">Easy to learn and integrate into existing projects</p>
+                      <h5 className="fw-bold">Rapid Development</h5>
+                      <p className="mb-0 text-muted">Faster prototyping and delivery with clean, readable code</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6 mb-4">
                   <div className="d-flex">
-                    <div className="me-4 text-success">
+                    <div className="me-4 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="fw-bold">High Performance</h5>
-                      <p className="mb-0 text-muted">Virtual DOM and optimized rendering for speed</p>
+                      <h5 className="fw-bold">Rich Ecosystem</h5>
+                      <p className="mb-0 text-muted">Thousands of libraries for web, data, AI, and automation</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6 mb-4">
                   <div className="d-flex">
-                    <div className="me-4 text-success">
+                    <div className="me-4 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="fw-bold">Versatile Ecosystem</h5>
-                      <p className="mb-0 text-muted">Core library focus with adaptable official libraries</p>
+                      <h5 className="fw-bold">Scalability</h5>
+                      <p className="mb-0 text-muted">Build solutions that grow with your business</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6 mb-4">
                   <div className="d-flex">
-                    <div className="me-4 text-success">
+                    <div className="me-4 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="fw-bold">Developer Friendly</h5>
-                      <p className="mb-0 text-muted">Excellent documentation and tooling (Vue CLI, Vite)</p>
+                      <h5 className="fw-bold">Strong Community</h5>
+                      <p className="mb-0 text-muted">Supported by millions of developers worldwide</p>
                     </div>
                   </div>
                 </div>
@@ -115,9 +115,9 @@ const VueJSPage = () => {
       <section className="py-6 py-lg-7 mb-6">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3">Our Vue.js Development Services</h2>
+            <h2 className="display-5 fw-bold mb-3">Our Python Development Services</h2>
             <p className="lead text-muted mx-auto" style={{maxWidth: '700px'}}>
-              We provide comprehensive Vue.js solutions to build modern and interactive web applications.
+              End-to-end Python solutions for startups, enterprises, and everything in between
             </p>
           </div>
           
@@ -125,12 +125,12 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 border-0 shadow-sm hover-shadow transition-all">
                 <div className="card-body p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
-                    <i className="bi bi-pencil-square fs-4"></i>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
+                    <i className="bi bi-code-slash fs-4"></i>
                   </div>
-                  <h4 className="fw-bold mb-3">Custom Vue.js Apps</h4>
+                  <h4 className="fw-bold mb-3">Web Development</h4>
                   <p className="text-muted">
-                    Tailor-made Vue.js applications to fit your specific business needs and goals.
+                    Custom web applications using Django, Flask, and FastAPI.
                   </p>
                 </div>
               </div>
@@ -138,12 +138,12 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 border-0 shadow-sm hover-shadow transition-all">
                 <div className="card-body p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
-                    <i className="bi bi-layers fs-4"></i>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
+                    <i className="bi bi-bar-chart-line fs-4"></i>
                   </div>
-                  <h4 className="fw-bold mb-3">Single Page Applications (SPAs)</h4>
+                  <h4 className="fw-bold mb-3">Data Science & AI</h4>
                   <p className="text-muted">
-                    Fast, responsive, and dynamic SPAs built with the Vue.js ecosystem.
+                    Machine learning, analytics, and automation with Python's top libraries.
                   </p>
                 </div>
               </div>
@@ -151,12 +151,12 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 border-0 shadow-sm hover-shadow transition-all">
                 <div className="card-body p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
-                    <i className="bi bi-plug fs-4"></i>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
+                    <i className="bi bi-gear fs-4"></i>
                   </div>
-                  <h4 className="fw-bold mb-3">Vue.js Integration</h4>
+                  <h4 className="fw-bold mb-3">Automation & Scripting</h4>
                   <p className="text-muted">
-                    Seamlessly integrate Vue.js into your existing projects or legacy systems.
+                    Automate workflows and business processes for efficiency and accuracy.
                   </p>
                 </div>
               </div>
@@ -164,12 +164,12 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 border-0 shadow-sm hover-shadow transition-all">
                 <div className="card-body p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
-                    <i className="bi bi-people-fill fs-4"></i>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
+                    <i className="bi bi-cloud fs-4"></i>
                   </div>
-                  <h4 className="fw-bold mb-3">Dedicated Vue.js Teams</h4>
+                  <h4 className="fw-bold mb-3">Cloud & API Integration</h4>
                   <p className="text-muted">
-                    Hire our skilled Vue.js developers to augment your development capacity.
+                    Scalable APIs and cloud solutions with Python and leading platforms.
                   </p>
                 </div>
               </div>
@@ -183,66 +183,66 @@ const VueJSPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 mb-5 mb-lg-0">
-              <h2 className="display-5 fw-bold mb-4">Why Partner with CinqueLabs for Vue.js?</h2>
+              <h2 className="display-5 fw-bold mb-4">Why CinqueLabs for Python Development?</h2>
               <p className="lead mb-5">
-                We combine Vue.js expertise with a commitment to quality to deliver exceptional web solutions.
+                Our Python experts deliver innovative, scalable, and secure solutions tailored to your business needs.
               </p>
               <div className="d-flex flex-wrap gap-3">
-                <button className="btn btn-success btn-lg px-4">
-                  Discuss Your Project
+                <button className="btn btn-primary btn-lg px-4">
+                  Get a Free Consultation
                 </button>
                 <button className="btn btn-outline-light btn-lg px-4">
-                  See Our Portfolio
+                  View Case Studies
                 </button>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="accordion" id="whyChooseUsAccordionVue">
+              <div className="accordion" id="whyChooseUsAccordion">
                 <div className="accordion-item border-0 mb-3 rounded overflow-hidden">
                   <h3 className="accordion-header">
-                    <button className="accordion-button bg-white text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVueOne">
-                      Proficient Vue.js Developers
+                    <button className="accordion-button bg-white text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                      Certified Python Developers
                     </button>
                   </h3>
-                  <div id="collapseVueOne" className="accordion-collapse collapse show" data-bs-parent="#whyChooseUsAccordionVue">
+                  <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#whyChooseUsAccordion">
                     <div className="accordion-body bg-white">
-                      Our team has deep expertise in Vue.js, Vuex, Vue Router, Nuxt.js, and related technologies.
+                      Our team includes certified Python professionals with years of experience across industries.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item border-0 mb-3 rounded overflow-hidden">
                   <h3 className="accordion-header">
-                    <button className="accordion-button collapsed bg-white text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVueTwo">
-                      Focus on User Experience
+                    <button className="accordion-button collapsed bg-white text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                      Agile & Transparent Process
                     </button>
                   </h3>
-                  <div id="collapseVueTwo" className="accordion-collapse collapse" data-bs-parent="#whyChooseUsAccordionVue">
+                  <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#whyChooseUsAccordion">
                     <div className="accordion-body bg-white">
-                      We build intuitive, engaging, and user-friendly interfaces that enhance user satisfaction.
+                      We use Agile methodologies for flexibility, transparency, and rapid delivery.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item border-0 mb-3 rounded overflow-hidden">
                   <h3 className="accordion-header">
-                    <button className="accordion-button collapsed bg-white text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVueThree">
-                      Clean and Maintainable Code
+                    <button className="accordion-button collapsed bg-white text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                      Quality & Security
                     </button>
                   </h3>
-                  <div id="collapseVueThree" className="accordion-collapse collapse" data-bs-parent="#whyChooseUsAccordionVue">
+                  <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#whyChooseUsAccordion">
                     <div className="accordion-body bg-white">
-                      We write well-structured, documented, and testable code following Vue.js best practices.
+                      Rigorous testing and best practices ensure secure, high-quality solutions.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item border-0 rounded overflow-hidden">
                   <h3 className="accordion-header">
-                    <button className="accordion-button collapsed bg-white text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVueFour">
-                      Timely Delivery & Support
+                    <button className="accordion-button collapsed bg-white text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                      Ongoing Support
                     </button>
                   </h3>
-                  <div id="collapseVueFour" className="accordion-collapse collapse" data-bs-parent="#whyChooseUsAccordionVue">
+                  <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#whyChooseUsAccordion">
                     <div className="accordion-body bg-white">
-                      We ensure on-time project delivery and provide ongoing support and maintenance.
+                      We provide maintenance and support to keep your Python solutions running smoothly.
                     </div>
                   </div>
                 </div>
@@ -256,9 +256,9 @@ const VueJSPage = () => {
       <section className="py-6 py-lg-7 bg-light">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3">Our Vue.js Technology Stack</h2>
+            <h2 className="display-5 fw-bold mb-3">Our Python Technology Stack</h2>
             <p className="lead text-muted mx-auto" style={{maxWidth: '700px'}}>
-              Leveraging the best of the Vue.js ecosystem to build cutting-edge applications.
+              We leverage the best Python frameworks and tools for every project
             </p>
           </div>
           
@@ -266,15 +266,15 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style={{width: '80px', height: '80px'}}>
-                    <i className="bi bi-box-seam fs-1"></i>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style={{width: '80px', height: '80px'}}>
+                    <i className="bi bi-code-slash fs-1"></i>
                   </div>
-                  <h4 className="fw-bold mb-3">Core Vue.js</h4>
+                  <h4 className="fw-bold mb-3">Web Frameworks</h4>
                   <ul className="list-unstyled text-muted">
-                    <li className="mb-2">Vue 3+</li>
-                    <li className="mb-2">Composition API</li>
-                    <li className="mb-2">Vue Router</li>
-                    <li className="mb-2">Pinia / Vuex</li>
+                    <li className="mb-2">Django</li>
+                    <li className="mb-2">Flask</li>
+                    <li className="mb-2">FastAPI</li>
+                    <li className="mb-2">Tornado</li>
                   </ul>
                 </div>
               </div>
@@ -282,15 +282,15 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style={{width: '80px', height: '80px'}}>
-                    <i className="bi bi-tools fs-1"></i>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style={{width: '80px', height: '80px'}}>
+                    <i className="bi bi-bar-chart-line fs-1"></i>
                   </div>
-                  <h4 className="fw-bold mb-3">Build Tools & Frameworks</h4>
+                  <h4 className="fw-bold mb-3">Data & AI</h4>
                   <ul className="list-unstyled text-muted">
-                    <li className="mb-2">Vite</li>
-                    <li className="mb-2">Nuxt.js</li>
-                    <li className="mb-2">Vue CLI</li>
-                    <li className="mb-2">TypeScript</li>
+                    <li className="mb-2">Pandas</li>
+                    <li className="mb-2">NumPy</li>
+                    <li className="mb-2">TensorFlow</li>
+                    <li className="mb-2">PyTorch</li>
                   </ul>
                 </div>
               </div>
@@ -298,15 +298,15 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style={{width: '80px', height: '80px'}}>
-                    <i className="bi bi-palette2 fs-1"></i>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style={{width: '80px', height: '80px'}}>
+                    <i className="bi bi-gear fs-1"></i>
                   </div>
-                  <h4 className="fw-bold mb-3">UI Libraries</h4>
+                  <h4 className="fw-bold mb-3">DevOps & Automation</h4>
                   <ul className="list-unstyled text-muted">
-                    <li className="mb-2">Vuetify</li>
-                    <li className="mb-2">Quasar Framework</li>
-                    <li className="mb-2">Tailwind CSS</li>
-                    <li className="mb-2">Element Plus</li>
+                    <li className="mb-2">Celery</li>
+                    <li className="mb-2">Ansible</li>
+                    <li className="mb-2">Fabric</li>
+                    <li className="mb-2">Selenium</li>
                   </ul>
                 </div>
               </div>
@@ -314,15 +314,15 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style={{width: '80px', height: '80px'}}>
-                    <i className="bi bi-shield-check fs-1"></i>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style={{width: '80px', height: '80px'}}>
+                    <i className="bi bi-cloud fs-1"></i>
                   </div>
-                  <h4 className="fw-bold mb-3">Testing & Deployment</h4>
+                  <h4 className="fw-bold mb-3">Cloud & APIs</h4>
                   <ul className="list-unstyled text-muted">
-                    <li className="mb-2">Vitest / Jest</li>
-                    <li className="mb-2">Cypress</li>
-                    <li className="mb-2">Storybook</li>
-                    <li className="mb-2">Netlify / Vercel</li>
+                    <li className="mb-2">AWS Lambda</li>
+                    <li className="mb-2">Google Cloud Functions</li>
+                    <li className="mb-2">REST APIs</li>
+                    <li className="mb-2">GraphQL</li>
                   </ul>
                 </div>
               </div>
@@ -337,70 +337,70 @@ const VueJSPage = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 mb-5 mb-lg-0">
               <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c7da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-                alt="Hire Vue.js Developers" 
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" 
+                alt="Hire Python Developers" 
                 className="img-fluid rounded-3 shadow-lg"
               />
             </div>
             <div className="col-lg-6">
-              <h2 className="display-5 fw-bold mb-4">Hire Dedicated Vue.js Developers</h2>
+              <h2 className="display-5 fw-bold mb-4">Hire Dedicated Python Developers</h2>
               <p className="lead text-muted mb-5">
-                Scale your team with our experienced Vue.js developers, available for flexible engagements.
+                Augment your team with our senior Python developers for full-time or part-time projects.
               </p>
               
               <div className="row g-4">
                 <div className="col-md-6">
                   <div className="d-flex">
-                    <div className="me-3 text-success">
+                    <div className="me-3 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="fw-bold">Skilled Vue.js Talent</h5>
-                      <p className="text-muted mb-0">Access to pre-vetted Vue.js experts</p>
+                      <h5 className="fw-bold">Flexible Hiring Models</h5>
+                      <p className="text-muted mb-0">Hourly, monthly, or full-time contracts</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="d-flex">
-                    <div className="me-3 text-success">
+                    <div className="me-3 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="fw-bold">Seamless Integration</h5>
-                      <p className="text-muted mb-0">Developers who adapt to your workflow</p>
+                      <h5 className="fw-bold">Quick Onboarding</h5>
+                      <p className="text-muted mb-0">Developers ready to start in 48 hours</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="d-flex">
-                    <div className="me-3 text-success">
+                    <div className="me-3 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="fw-bold">Cost-Effective Solutions</h5>
-                      <p className="text-muted mb-0">Flexible hiring models to suit your budget</p>
+                      <h5 className="fw-bold">Dedicated Resources</h5>
+                      <p className="text-muted mb-0">Work exclusively on your project</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="d-flex">
-                    <div className="me-3 text-success">
+                    <div className="me-3 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="fw-bold">Full Transparency</h5>
-                      <p className="text-muted mb-0">Regular communication and progress reports</p>
+                      <h5 className="fw-bold">Daily Reporting</h5>
+                      <p className="text-muted mb-0">Transparent progress updates</p>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div className="mt-5">
-                <button className="btn btn-success btn-lg px-4 me-3">
-                  Hire Vue.js Devs
+                <button className="btn btn-primary btn-lg px-4 me-3">
+                  Hire Developers
                 </button>
                 <button className="btn btn-outline-secondary btn-lg px-4">
-                  View Developer Profiles
+                  View Profiles
                 </button>
               </div>
             </div>
@@ -412,9 +412,9 @@ const VueJSPage = () => {
       <section className="py-6 py-lg-7 bg-dark text-white">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3">Our Vue.js Development Workflow</h2>
+            <h2 className="display-5 fw-bold mb-3">Our Development Process</h2>
             <p className="lead text-white-50 mx-auto" style={{maxWidth: '700px'}}>
-              A streamlined process to deliver high-quality Vue.js applications efficiently.
+              A proven methodology that ensures quality and timely delivery
             </p>
           </div>
           
@@ -422,12 +422,12 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 bg-dark border-secondary">
                 <div className="card-body text-center p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
                     <span className="fs-4 fw-bold">1</span>
                   </div>
-                  <h4 className="fw-bold mb-3 text-white">Discovery & Planning</h4>
+                  <h4 className="fw-bold mb-3 text-white">Discovery</h4>
                   <p className="text-white-50">
-                    Understanding your vision, requirements, and project goals.
+                    We analyze requirements, define scope, and plan the project roadmap.
                   </p>
                 </div>
               </div>
@@ -435,12 +435,12 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 bg-dark border-secondary">
                 <div className="card-body text-center p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
                     <span className="fs-4 fw-bold">2</span>
                   </div>
-                  <h4 className="fw-bold mb-3 text-white">Design & Prototyping</h4>
+                  <h4 className="fw-bold mb-3 text-white">Design</h4>
                   <p className="text-white-50">
-                    Creating wireframes, mockups, and interactive prototypes.
+                    We create wireframes, prototypes, and UI/UX designs for your approval.
                   </p>
                 </div>
               </div>
@@ -448,12 +448,12 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 bg-dark border-secondary">
                 <div className="card-body text-center p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
                     <span className="fs-4 fw-bold">3</span>
                   </div>
-                  <h4 className="fw-bold mb-3 text-white">Vue.js Development</h4>
+                  <h4 className="fw-bold mb-3 text-white">Development</h4>
                   <p className="text-white-50">
-                    Building your application with clean code and agile practices.
+                    Our developers build your application using Agile sprints with regular demos.
                   </p>
                 </div>
               </div>
@@ -461,12 +461,12 @@ const VueJSPage = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 bg-dark border-secondary">
                 <div className="card-body text-center p-4">
-                  <div className="bg-success bg-opacity-10 text-success rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
+                  <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: '60px', height: '60px'}}>
                     <span className="fs-4 fw-bold">4</span>
                   </div>
-                  <h4 className="fw-bold mb-3 text-white">QA & Launch</h4>
+                  <h4 className="fw-bold mb-3 text-white">Deployment</h4>
                   <p className="text-white-50">
-                    Thorough testing, deployment, and post-launch support.
+                    We deploy the application, provide training, and offer ongoing support.
                   </p>
                 </div>
               </div>
@@ -479,9 +479,9 @@ const VueJSPage = () => {
       <section className="py-6 py-lg-7 bg-light">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3">Happy Clients, Successful Vue.js Projects</h2>
+            <h2 className="display-5 fw-bold mb-3">What Our Clients Say</h2>
             <p className="lead text-muted mx-auto" style={{maxWidth: '700px'}}>
-              Discover how our Vue.js expertise has helped businesses achieve their goals.
+              Trusted by startups and Fortune 500 companies worldwide
             </p>
           </div>
           
@@ -495,13 +495,13 @@ const VueJSPage = () => {
                     ))}
                   </div>
                   <p className="mb-4">
-                    "CinqueLabs developed a highly interactive SPA for us using Vue.js. Their team was skilled, responsive, and delivered a fantastic product."
+                    "CinqueLabs delivered a robust Python solution that streamlined our operations and improved efficiency. Highly recommended!"
                   </p>
                   <div className="d-flex align-items-center">
-                    <img src="https://randomuser.me/api/portraits/women/35.jpg" className="rounded-circle me-3" width="50" height="50" alt="Client" />
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" className="rounded-circle me-3" width="50" height="50" alt="Client" />
                     <div>
-                      <h6 className="mb-0 fw-bold">Alice Green</h6>
-                      <small className="text-muted">Founder, StartupX</small>
+                      <h6 className="mb-0 fw-bold">Michael Johnson</h6>
+                      <small className="text-muted">CTO, TechCorp</small>
                     </div>
                   </div>
                 </div>
@@ -516,13 +516,13 @@ const VueJSPage = () => {
                     ))}
                   </div>
                   <p className="mb-4">
-                    "The Vue.js application built by CinqueLabs is incredibly fast and user-friendly. We've seen a significant improvement in user engagement."
+                    "Their Python data science team helped us unlock valuable insights from our data. The results exceeded our expectations."
                   </p>
                   <div className="d-flex align-items-center">
-                    <img src="https://randomuser.me/api/portraits/men/47.jpg" className="rounded-circle me-3" width="50" height="50" alt="Client" />
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" className="rounded-circle me-3" width="50" height="50" alt="Client" />
                     <div>
-                      <h6 className="mb-0 fw-bold">Mark Taylor</h6>
-                      <small className="text-muted">Product Owner, Tech Solutions Inc.</small>
+                      <h6 className="mb-0 fw-bold">Sarah Williams</h6>
+                      <small className="text-muted">Product Manager, RetailX</small>
                     </div>
                   </div>
                 </div>
@@ -537,13 +537,13 @@ const VueJSPage = () => {
                     ))}
                   </div>
                   <p className="mb-4">
-                    "We hired dedicated Vue.js developers from CinqueLabs, and they integrated perfectly with our team, contributing significantly to our project's success."
+                    "CinqueLabs' Python developers integrated seamlessly with our team and delivered on time, every time."
                   </p>
                   <div className="d-flex align-items-center">
-                    <img src="https://randomuser.me/api/portraits/women/79.jpg" className="rounded-circle me-3" width="50" height="50" alt="Client" />
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" className="rounded-circle me-3" width="50" height="50" alt="Client" />
                     <div>
-                      <h6 className="mb-0 fw-bold">Laura White</h6>
-                      <small className="text-muted">Engineering Lead, Digital Ventures</small>
+                      <h6 className="mb-0 fw-bold">David Chen</h6>
+                      <small className="text-muted">Director of Engineering, FinTech Solutions</small>
                     </div>
                   </div>
                 </div>
@@ -554,20 +554,20 @@ const VueJSPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-6 py-lg-7 bg-success text-white">
+      <section className="py-6 py-lg-7 bg-primary text-white">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">
-              <h2 className="display-5 fw-bold mb-4">Let's Build Your Next Vue.js Application</h2>
+              <h2 className="display-5 fw-bold mb-4">Ready to Build Your Python Solution?</h2>
               <p className="lead mb-5">
-                Contact us today to discuss your Vue.js project and how we can help you succeed.
+                Let's discuss how our Python expertise can help you achieve your business goals.
               </p>
               <div className="d-flex flex-wrap justify-content-center gap-3">
-                <button className="btn btn-light btn-lg px-5 text-success">
-                  Get Your Free Quote
+                <button className="btn btn-light btn-lg px-5 text-primary">
+                  Get a Free Quote
                 </button>
                 <button className="btn btn-outline-light btn-lg px-5">
-                  Talk to an Expert
+                  Schedule a Call
                 </button>
               </div>
             </div>
@@ -579,72 +579,72 @@ const VueJSPage = () => {
       <section className="py-6 py-lg-7">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3">Vue.js Development FAQs</h2>
+            <h2 className="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
             <p className="lead text-muted mx-auto" style={{maxWidth: '700px'}}>
-              Common questions about our Vue.js development services.
+              Answers to common questions about our Python development services
             </p>
           </div>
           
           <div className="row justify-content-center">
             <div className="col-lg-9">
-              <div className="accordion" id="faqAccordionVuePage">
+              <div className="accordion" id="faqAccordion">
                 <div className="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
                   <h3 className="accordion-header">
-                    <button className="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqVueOnePage">
-                      When should I choose Vue.js over other frameworks?
+                    <button className="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+                      What types of Python projects do you deliver?
                     </button>
                   </h3>
-                  <div id="faqVueOnePage" className="accordion-collapse collapse show" data-bs-parent="#faqAccordionVuePage">
+                  <div id="faqOne" className="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      Vue.js is an excellent choice for projects requiring high performance, a gentle learning curve, and flexibility. It's great for SPAs, integrating into existing applications, or when you need a lightweight yet powerful solution.
+                      We deliver web apps, APIs, data science solutions, automation scripts, and more using Python's best frameworks and libraries.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
                   <h3 className="accordion-header">
-                    <button className="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqVueTwoPage">
-                      Can Vue.js be used for large-scale applications?
+                    <button className="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                      Can you integrate Python with our existing systems?
                     </button>
                   </h3>
-                  <div id="faqVueTwoPage" className="accordion-collapse collapse" data-bs-parent="#faqAccordionVuePage">
+                  <div id="faqTwo" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      Absolutely. With its component-based architecture, robust ecosystem (Vue Router, Pinia/Vuex), and tools like Nuxt.js for server-side rendering and static site generation, Vue.js is well-equipped for large and complex applications.
+                      Absolutely. We have extensive experience integrating Python solutions with legacy systems, third-party APIs, and cloud platforms.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
                   <h3 className="accordion-header">
-                    <button className="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqVueThreePage">
-                      What is the typical development timeline for a Vue.js project?
+                    <button className="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">
+                      Do you provide ongoing support and maintenance?
                     </button>
                   </h3>
-                  <div id="faqVueThreePage" className="accordion-collapse collapse" data-bs-parent="#faqAccordionVuePage">
+                  <div id="faqThree" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      The timeline varies depending on the project's scope and complexity. A simple Vue.js application might take a few weeks, while larger projects can take several months. We provide a detailed estimate after the discovery phase.
+                      Yes, we offer flexible support and maintenance packages to keep your Python applications secure and up-to-date.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
                   <h3 className="accordion-header">
-                    <button className="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqVueFourPage">
-                      Do you offer Vue.js migration services?
+                    <button className="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour">
+                      How do you ensure code quality?
                     </button>
                   </h3>
-                  <div id="faqVueFourPage" className="accordion-collapse collapse" data-bs-parent="#faqAccordionVuePage">
+                  <div id="faqFour" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      Yes, we can help you migrate your existing application to Vue.js or upgrade your current Vue.js application to the latest version, ensuring a smooth transition and minimal disruption.
+                      We follow best practices, code reviews, automated testing, and CI/CD pipelines to ensure high-quality, maintainable code.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item border-0 rounded overflow-hidden shadow-sm">
                   <h3 className="accordion-header">
-                    <button className="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqVueFivePage">
-                      How do you handle state management in Vue.js applications?
+                    <button className="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive">
+                      Can I hire dedicated Python developers?
                     </button>
                   </h3>
-                  <div id="faqVueFivePage" className="accordion-collapse collapse" data-bs-parent="#faqAccordionVuePage">
+                  <div id="faqFive" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div className="accordion-body">
-                      We use official state management libraries like Pinia (recommended for Vue 3) or Vuex for managing application state effectively, especially in larger applications. For simpler cases, Vue's built-in reactivity system or the Composition API can be sufficient.
+                      Yes, you can hire our Python experts on a dedicated, full-time, or part-time basis to work as an extension of your team.
                     </div>
                   </div>
                 </div>
@@ -657,4 +657,4 @@ const VueJSPage = () => {
   );
 };
 
-export default VueJSPage;
+export default PythonPage;

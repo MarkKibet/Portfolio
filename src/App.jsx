@@ -9,6 +9,7 @@ import "./App.css";
 import ReactJS from "./components/ReactJS.jsx";
 import Angular from "./components/Angular.jsx";
 import Vue from "./components/Vue.jsx";
+import Nodejs from "./components/Nodejs.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,6 +41,7 @@ function App() {
         <Route path="/ReactJS" element={<ReactJS />} />
         <Route path="/Angular" element={<Angular />} />
         <Route path="/Vue" element={<Vue />} />
+        <Route path="/Node" element={<Nodejs />} />
       </Routes>
     </Router>
   );
