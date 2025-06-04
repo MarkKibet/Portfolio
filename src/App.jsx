@@ -7,6 +7,7 @@ import BlogsPage from "./components/BlogsPage";
 import BlogPage from "./components/BlogPage";
 import "./App.css";
 import ReactJSPage from "./components/ReactJS";
+import AngularPage from "./components/Angular";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -36,6 +37,7 @@ function App() {
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/blog/:id" element={<BlogPage />} />
         <Route path="/ReactJS" element={<ReactJSPage />} />
+        <Route path="/angular" element={<AngularPage />} />
       </Routes>
     </Router>
   );
