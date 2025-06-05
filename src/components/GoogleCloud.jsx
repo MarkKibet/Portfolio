@@ -1,39 +1,68 @@
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Cpu, Database, Palette, Users, Cloud, ChevronDown, Star } from "lucide-react";
+
+// Add missing stats and technologies arrays
+const stats = [
+  { value: "70+", label: "GCP Projects Delivered" },
+  { value: "20+", label: "Certified GCP Engineers" },
+  { value: "5+", label: "Years of GCP Experience" },
+  { value: "99.9%", label: "Uptime Guarantee" },
+];
+
+const technologies = [
+  { icon: <img src="https://cloud.google.com/images/social-icon-google-cloud-1200-630.png" alt="Google Cloud" style={{height: 24}} />, name: "Google Cloud" },
+  { icon: <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" style={{height: 24}} />, name: "Docker" },
+  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" style={{height: 24}} />, name: "Kubernetes" },
+  { icon: <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" style={{height: 24}} />, name: "Git" },
+  { icon: <img src="https://www.terraform.io/assets/images/og-image-8b3e4f7d.png" alt="Terraform" style={{height: 24}} />, name: "Terraform" },
+  { icon: <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" style={{height: 24}} />, name: "Python" },
+];
 
 const GoogleCloudPage = () => {
+  const handleNewsletterSubmit = (e) => {
+    e.preventDefault();
+    const emailInput = e.target.querySelector('input[type="email"]');
+    if (emailInput.value) {
+      alert('Thank you for subscribing to our newsletter!');
+      emailInput.value = '';
+    }
+  };
+
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="hero-section bg-gradient-to-r from-gray-900 to-gray-800 text-white relative overflow-hidden py-16 lg:py-24">
-        <div className="absolute inset-0 z-0 opacity-20">
-          <div className="absolute top-0 right-0 h-full w-1/2 bg-[url('https://techifysolutions.com/wp-content/uploads/2022/11/ReactJS-2.webp')] bg-cover bg-center"></div>
+      <section className="bg-dark text-white position-relative overflow-hidden py-5 py-lg-7">
+        <div className="position-absolute top-0 end-0 h-100 w-50 d-none d-lg-block" style={{zIndex: 0, opacity: 0.2}}>
+          <div className="h-100 w-100 bg-cover bg-center"
+               style={{backgroundImage: "url('https://techifysolutions.com/wp-content/uploads/2022/11/ReactJS-2.webp')"}}></div>
         </div>
-        
-        <div className="container relative z-10">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-12 lg:mb-0">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <div className="container position-relative z-index-2">
+          <div className="row align-items-center">
+            <div className="col-lg-6 mb-5 mb-lg-0">
+              <h1 className="display-4 fw-bold mb-4">
                 Google Cloud <span className="text-primary">Services</span>
               </h1>
-              <p className="text-xl text-gray-300 mb-8 max-w-lg">
+              <p className="lead mb-5">
                 Leverage the power of Google Cloud with CinqueLabs. Our expert team delivers scalable, secure, and high-performance cloud solutions tailored to your business needs.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <button className="btn-primary px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-opacity-90">
+              <div className="d-flex flex-wrap gap-3">
+                <button className="btn btn-primary btn-lg px-4 py-3">
                   Get Started
                 </button>
-                <button className="btn-outline-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-white hover:text-gray-900">
+                <button className="btn btn-outline-light btn-lg px-4 py-3">
                   Learn More
                 </button>
               </div>
             </div>
-            <div className="lg:w-1/2 relative">
-              <img 
-                src="https://techifysolutions.com/wp-content/uploads/2022/11/ReactJS-1.webp" 
-                alt="Google Cloud Services" 
-                className="w-full rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-primary opacity-10 rounded-xl"></div>
+            <div className="col-lg-6">
+              <div className="position-relative">
+                <img 
+                  src="https://techifysolutions.com/wp-content/uploads/2022/11/ReactJS-1.webp" 
+                  alt="Google Cloud Services" 
+                  className="img-fluid rounded-3 shadow-lg"
+                  style={{ background: "#fff", padding: "1rem" }}
+                />
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-3"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -566,9 +595,68 @@ const GoogleCloudPage = () => {
           </div>
         </div>
       </section>
+
+      <Footer handleNewsletterSubmit={handleNewsletterSubmit} />
     </div>
   );
 };
+
+const Footer = ({ handleNewsletterSubmit }) => (
+  <footer className="bg-dark text-white py-5">
+    <div className="container">
+      <div className="row g-4">
+        <div className="col-lg-4">
+          <h5 className="fw-bold mb-4">CinqueLabs</h5>
+          <p>Delivering cutting-edge software solutions with Node.js and modern web technologies since 2015.</p>
+          <div className="social-icons mt-4">
+            <a href="#" className="text-white me-3"><i className="fab fa-twitter fa-lg"></i></a>
+            <a href="#" className="text-white me-3"><i className="fab fa-linkedin fa-lg"></i></a>
+            <a href="#" className="text-white me-3"><i className="fab fa-github fa-lg"></i></a>
+            <a href="#" className="text-white"><i className="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+        <div className="col-lg-2 col-md-6">
+          <h6 className="fw-bold mb-4">Company</h6>
+          <ul className="list-unstyled">
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">About Us</a></li>
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Careers</a></li>
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Blog</a></li>
+            <li><a href="#" className="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div className="col-lg-2 col-md-6">
+          <h6 className="fw-bold mb-4">Services</h6>
+          <ul className="list-unstyled">
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Web Development</a></li>
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Mobile Apps</a></li>
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Cloud Solutions</a></li>
+            <li><a href="#" className="text-white-50 text-decoration-none">DevOps</a></li>
+          </ul>
+        </div>
+        <div className="col-lg-4">
+          <h6 className="fw-bold mb-4">Newsletter</h6>
+          <p className="text-white-50">Subscribe to our newsletter for the latest in Node.js and web development.</p>
+          <form className="mt-3" onSubmit={handleNewsletterSubmit}>
+            <div className="input-group">
+              <input type="email" className="form-control" placeholder="Your email" required />
+              <button className="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr className="my-4 bg-secondary" />
+      <div className="row">
+        <div className="col-md-6 text-center text-md-start">
+          <p className="mb-0 text-white-50 small">© {new Date().getFullYear()} CinqueLabs. All rights reserved.</p>
+        </div>
+        <div className="col-md-6 text-center text-md-end">
+          <a href="#" className="text-white-50 text-decoration-none small me-3">Privacy Policy</a>
+          <a href="#" className="text-white-50 text-decoration-none small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
 
 export default GoogleCloudPage;
 

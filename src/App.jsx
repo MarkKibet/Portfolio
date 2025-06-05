@@ -10,6 +10,13 @@ import ReactJS from "./components/ReactJS.jsx";
 import Angular from "./components/Angular.jsx";
 import Vue from "./components/Vue.jsx";
 import Nodejs from "./components/Nodejs.jsx";
+import Azure from "./components/Azure.jsx";
+import Python from "./components/Python.jsx";
+import Tensorflow from "./components/Tensorflow.jsx";
+import AWS from "./components/AWS.jsx";
+import GoogleCloud from "./components/GoogleCloud.jsx";
+import Java from "./components/Java.jsx";
+import PyTorch from "./components/PyTorch.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -42,6 +49,14 @@ function App() {
         <Route path="/Angular" element={<Angular />} />
         <Route path="/Vue" element={<Vue />} />
         <Route path="/Node" element={<Nodejs />} />
+        <Route path="/Azure" element={<Azure />} />
+        <Route path="/Python" element={<Python />} />
+        <Route path="/Tensorflow" element={<Tensorflow />} />
+        <Route path="/AWS" element={<AWS />} />
+        <Route path="/GoogleCloud" element={<GoogleCloud />} />
+        <Route path="/Java" element={<Java />} />
+        <Route path="/PyTorch" element={<PyTorch />} />
+        {/* Add more routes as needed */}
       </Routes>
     </Router>
   );

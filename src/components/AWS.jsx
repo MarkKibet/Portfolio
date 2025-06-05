@@ -1,6 +1,33 @@
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Cpu, Database, Palette, Users, Cloud, ChevronDown, Star } from "lucide-react";
+
+const stats = [
+  { value: "100+", label: "AWS Projects Delivered" },
+  { value: "30+", label: "Certified AWS Engineers" },
+  { value: "5+", label: "Years of AWS Experience" },
+  { value: "99.9%", label: "Uptime Guarantee" },
+];
+
+const technologies = [
+  { icon: <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS" className="h-6" />, name: "AWS" },
+  { icon: <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" className="h-6" />, name: "Docker" },
+  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" className="h-6" />, name: "Kubernetes" },
+  { icon: <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" className="h-6" />, name: "Git" },
+  { icon: <img src="https://www.terraform.io/assets/images/og-image-8b3e4f7d.png" alt="Terraform" className="h-6" />, name: "Terraform" },
+  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="Bash" className="h-6" />, name: "Bash" },
+  { icon: <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" className="h-6" />, name: "Python" },
+  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Amazon_DynamoDB_logo.png" alt="DynamoDB" className="h-6" />, name: "DynamoDB" },
+];
 
 const AWSPage = () => {
+  const handleNewsletterSubmit = (e) => {
+    e.preventDefault();
+    const emailInput = e.target.querySelector('input[type="email"]');
+    if (emailInput.value) {
+      alert('Thank you for subscribing to our newsletter!');
+      emailInput.value = '';
+    }
+  };
+
   return (
     <div className="font-sans">
       {/* Hero Section */}
@@ -566,9 +593,69 @@ const AWSPage = () => {
           </div>
         </div>
       </section>
+
+      <Footer handleNewsletterSubmit={handleNewsletterSubmit} />
     </div>
   );
 };
+
+// Footer component (copied from Nodejs.jsx)
+const Footer = ({ handleNewsletterSubmit }) => (
+  <footer className="bg-dark text-white py-5">
+    <div className="container">
+      <div className="row g-4">
+        <div className="col-lg-4">
+          <h5 className="fw-bold mb-4">CinqueLabs</h5>
+          <p>Delivering cutting-edge software solutions with Node.js and modern web technologies since 2015.</p>
+          <div className="social-icons mt-4">
+            <a href="#" className="text-white me-3"><i className="fab fa-twitter fa-lg"></i></a>
+            <a href="#" className="text-white me-3"><i className="fab fa-linkedin fa-lg"></i></a>
+            <a href="#" className="text-white me-3"><i className="fab fa-github fa-lg"></i></a>
+            <a href="#" className="text-white"><i className="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+        <div className="col-lg-2 col-md-6">
+          <h6 className="fw-bold mb-4">Company</h6>
+          <ul className="list-unstyled">
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">About Us</a></li>
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Careers</a></li>
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Blog</a></li>
+            <li><a href="#" className="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div className="col-lg-2 col-md-6">
+          <h6 className="fw-bold mb-4">Services</h6>
+          <ul className="list-unstyled">
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Web Development</a></li>
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Mobile Apps</a></li>
+            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Cloud Solutions</a></li>
+            <li><a href="#" className="text-white-50 text-decoration-none">DevOps</a></li>
+          </ul>
+        </div>
+        <div className="col-lg-4">
+          <h6 className="fw-bold mb-4">Newsletter</h6>
+          <p className="text-white-50">Subscribe to our newsletter for the latest in Node.js and web development.</p>
+          <form className="mt-3" onSubmit={handleNewsletterSubmit}>
+            <div className="input-group">
+              <input type="email" className="form-control" placeholder="Your email" required />
+              <button className="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr className="my-4 bg-secondary" />
+      <div className="row">
+        <div className="col-md-6 text-center text-md-start">
+          <p className="mb-0 text-white-50 small">© {new Date().getFullYear()} CinqueLabs. All rights reserved.</p>
+        </div>
+        <div className="col-md-6 text-center text-md-end">
+          <a href="#" className="text-white-50 text-decoration-none small me-3">Privacy Policy</a>
+          <a href="#" className="text-white-50 text-decoration-none small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
 
 export default AWSPage;
 

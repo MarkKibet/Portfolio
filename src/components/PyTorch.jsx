@@ -1,4 +1,29 @@
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Cpu, Database, Palette, Users, ChevronDown, Star } from "lucide-react";
+
+const stats = [
+  { value: "50+", label: "AI Projects Delivered" },
+  { value: "20+", label: "Expert PyTorch Developers" },
+  { value: "4+", label: "Years of PyTorch Experience" },
+  { value: "98%", label: "Client Satisfaction" },
+];
+
+const technologies = [
+  { icon: <img src="https://pytorch.org/assets/images/pytorch-logo.png" alt="PyTorch" className="h-6" />, name: "PyTorch" },
+  { icon: <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" className="h-6" />, name: "Python" },
+  { icon: <img src="https://numpy.org/images/logo.svg" alt="NumPy" className="h-6" />, name: "NumPy" },
+  { icon: <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" className="h-6" />, name: "Pandas" },
+  { icon: <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="Scikit-learn" className="h-6" />, name: "Scikit-learn" },
+  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/TensorFlowLogo.svg" alt="TensorBoard" className="h-6" />, name: "TensorBoard" },
+  { icon: <img src="https://matplotlib.org/_static/images/logo2.svg" alt="Matplotlib" className="h-6" />, name: "Matplotlib" },
+  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS SageMaker" className="h-6" />, name: "AWS SageMaker" },
+  { icon: <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" className="h-6" />, name: "Docker" },
+  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" className="h-6" />, name: "Kubernetes" },
+  { icon: <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" className="h-6" />, name: "Git" },
+  { icon: <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter" className="h-6" />, name: "Slack" },
+  { icon: <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack" className="h-6" />, name: "Slack" },
+  { icon: <img src="https://cdn.worldvectorlogo.com/logos/trello.svg" alt="Trello" className="h-6" />, name: "Trello" },
+  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg" alt="Zoom" className="h-6" />, name: "Zoom" },
+];
 
 const PyTorchPage = () => {
   return (
