@@ -14,34 +14,34 @@ const JavaPage = () => {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="hero-section bg-dark text-white relative overflow-hidden py-16 lg:py-24">
-        <div className="container relative z-10 mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-12 lg:mb-0">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+      <section className="hero-section bg-dark text-white position-relative overflow-hidden py-5 py-lg-7">
+        <div className="container position-relative z-10 mx-auto px-4">
+          <div className="row align-items-center">
+            <div className="col-lg-6 mb-5 mb-lg-0">
+              <h1 className="display-4 fw-bold mb-4">
                 Java Development Services
               </h1>
-              <p className="text-xl text-gray-300 mb-8 max-w-lg">
+              <p className="fs-5 text-light mb-4">
                 Build scalable, secure, and high-performance Java applications with CinqueLabs. Enterprise-grade solutions for web, mobile, and backend.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="btn-primary px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-opacity-90">Get Started</Link>
-                <Link to="/case-studies/java" className="btn-outline-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-white hover:text-gray-900">Learn More</Link>
+              <div className="d-flex flex-wrap gap-3">
+                <Link to="/contact" className="btn btn-primary btn-lg px-4 py-3 fw-semibold">Get Started</Link>
+                <Link to="/case-studies/java" className="btn btn-outline-light btn-lg px-4 py-3 fw-semibold">Learn More</Link>
               </div>
             </div>
-            <div className="lg:w-1/2 relative">
-              <img 
+            <div className="col-lg-6 position-relative">
+              {/* <img 
                 src="https://cdn.worldvectorlogo.com/logos/java-4.svg" 
                 alt="Java Development" 
-                className="w-full rounded-xl shadow-2xl"
+                className="w-100 rounded-3 shadow-lg img-fluid"
                 style={{ background: "#fff", padding: "1rem" }}
-              />
-              <div className="absolute inset-0 bg-primary opacity-10 rounded-xl"></div>
+              /> */}
+              <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-3"></div>
             </div>
           </div>
         </div>
-        <div className="absolute top-0 right-0 h-full w-1/2 hidden lg:block">
-          <div className="h-full w-full bg-cover bg-center opacity-20" 
+        <div className="position-absolute top-0 end-0 h-100 w-50 d-none d-lg-block">
+          <div className="h-100 w-100 bg-cover bg-center opacity-20" 
                style={{backgroundImage: "url('https://miro.medium.com/v2/resize:fit:1400/1*LrjUe1T9Q6kQzA6p8rQe6w.png')"}}>
           </div>
         </div>

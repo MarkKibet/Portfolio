@@ -32,11 +32,11 @@ const AngularPage = () => {
             </div>
             <div className="col-lg-6">
               <div className="position-relative">
-                <img 
+                {/* <img 
                   src="https://www.etatvasoft.com/blog/wp-content/uploads/2023/02/angular-development-services-1.jpg" 
                   alt="Angular Development" 
                   className="img-fluid rounded-3 shadow-lg"
-                />
+                /> */}
                 <div className="position-absolute top-0 start-0 w-100 h-100 bg-danger opacity-10 rounded-3"></div>
               </div>
             </div>
@@ -44,7 +44,7 @@ const AngularPage = () => {
         </div>
         <div className="position-absolute top-0 end-0 h-100 w-50 d-none d-lg-block">
           <div className="h-100 w-100 bg-cover bg-center opacity-20" 
-               style={{backgroundImage: "url('https://miro.medium.com/v2/resize:fit:1200/1*s_L2P4v22hL70GCbs2EWgA.png')"}}>
+               style={{backgroundImage: "url('https://angular.io/assets/images/logos/angular/angular.svg')"}}>
           </div>
         </div>
       </section>

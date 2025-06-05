@@ -1,6 +1,5 @@
-import { CheckCircle2, Cpu, Database, Palette, Users, Cloud, ChevronDown, Star } from "lucide-react";
+import { CheckCircle2, Cpu, Database, Palette, Users, Cloud, Star } from "lucide-react";
 
-// Add missing stats and technologies arrays
 const stats = [
   { value: "70+", label: "GCP Projects Delivered" },
   { value: "20+", label: "Certified GCP Engineers" },
@@ -9,12 +8,36 @@ const stats = [
 ];
 
 const technologies = [
-  { icon: <img src="https://cloud.google.com/images/social-icon-google-cloud-1200-630.png" alt="Google Cloud" style={{height: 24}} />, name: "Google Cloud" },
-  { icon: <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" style={{height: 24}} />, name: "Docker" },
-  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" style={{height: 24}} />, name: "Kubernetes" },
-  { icon: <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" style={{height: 24}} />, name: "Git" },
-  { icon: <img src="https://www.terraform.io/assets/images/og-image-8b3e4f7d.png" alt="Terraform" style={{height: 24}} />, name: "Terraform" },
-  { icon: <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" style={{height: 24}} />, name: "Python" },
+  { icon: <img src="https://cloud.google.com/images/social-icon-google-cloud-1200-630.png" alt="Google Cloud" style={{height: 28, width: 28, objectFit: "contain"}} />, name: "Google Cloud" },
+  { icon: <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" style={{height: 28, width: 28, objectFit: "contain"}} />, name: "Docker" },
+  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" style={{height: 28, width: 28, objectFit: "contain"}} />, name: "Kubernetes" },
+  { icon: <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" style={{height: 28, width: 28, objectFit: "contain"}} />, name: "Git" },
+  { icon: <img src="https://www.terraform.io/assets/images/og-image-8b3e4f7d.png" alt="Terraform" style={{height: 28, width: 28, objectFit: "contain"}} />, name: "Terraform" },
+  { icon: <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" style={{height: 28, width: 28, objectFit: "contain"}} />, name: "Python" },
+];
+
+const testimonials = [
+  {
+    quote: "CinqueLabs migrated our infrastructure to GCP seamlessly. Their expertise and support were invaluable.",
+    name: "Emily Carter",
+    role: "CTO, InnovateTech",
+    image: "https://randomuser.me/api/portraits/women/32.jpg",
+    rating: 5
+  },
+  {
+    quote: "The GCP solution delivered by CinqueLabs improved our scalability and reliability. Highly recommended.",
+    name: "James Smith",
+    role: "Operations Manager, RetailCo",
+    image: "https://randomuser.me/api/portraits/men/44.jpg",
+    rating: 5
+  },
+  {
+    quote: "CinqueLabs' GCP engineers are top-notch. Our cloud costs dropped and performance soared.",
+    name: "Linda Johnson",
+    role: "VP of Engineering, FinServe",
+    image: "https://randomuser.me/api/portraits/women/75.jpg",
+    rating: 5
+  }
 ];
 
 const GoogleCloudPage = () => {
@@ -30,91 +53,90 @@ const GoogleCloudPage = () => {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="bg-dark text-white position-relative overflow-hidden py-5 py-lg-7">
-        <div className="position-absolute top-0 end-0 h-100 w-50 d-none d-lg-block" style={{zIndex: 0, opacity: 0.2}}>
-          <div className="h-100 w-100 bg-cover bg-center"
-               style={{backgroundImage: "url('https://techifysolutions.com/wp-content/uploads/2022/11/ReactJS-2.webp')"}}></div>
+      <section className="hero-section bg-dark text-white position-relative overflow-hidden py-5 py-lg-7">
+        <div className="position-absolute top-0 end-0 h-100 w-50 opacity-20">
+          <div className="position-absolute top-0 end-0 h-100 w-100 bg-cover bg-center" style={{ backgroundImage: "url('https://cloud.google.com/images/social-icon-google-cloud-1200-630.png')" }}></div>
         </div>
-        <div className="container position-relative z-index-2">
+        <div className="container position-relative z-10">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-5 mb-lg-0">
               <h1 className="display-4 fw-bold mb-4">
                 Google Cloud <span className="text-primary">Services</span>
               </h1>
-              <p className="lead mb-5">
-                Leverage the power of Google Cloud with CinqueLabs. Our expert team delivers scalable, secure, and high-performance cloud solutions tailored to your business needs.
+              <p className="fs-5 text-light mb-4">
+                Accelerate your digital transformation with CinqueLabs' Google Cloud Platform expertise. We deliver secure, scalable, and cost-effective cloud solutions for businesses of all sizes.
               </p>
               <div className="d-flex flex-wrap gap-3">
-                <button className="btn btn-primary btn-lg px-4 py-3">
+                <button className="btn btn-primary btn-lg px-4 py-3 fw-semibold">
                   Get Started
                 </button>
-                <button className="btn btn-outline-light btn-lg px-4 py-3">
+                <button className="btn btn-outline-light btn-lg px-4 py-3 fw-semibold">
                   Learn More
                 </button>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="position-relative">
-                <img 
-                  src="https://techifysolutions.com/wp-content/uploads/2022/11/ReactJS-1.webp" 
-                  alt="Google Cloud Services" 
-                  className="img-fluid rounded-3 shadow-lg"
-                  style={{ background: "#fff", padding: "1rem" }}
-                />
-                <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-3"></div>
-              </div>
+            <div className="col-lg-6 position-relative">
+              {/* <img
+                src="https://cloud.google.com/images/social-icon-google-cloud-1200-630.png"
+                alt="Google Cloud Services"
+                className="w-100 rounded-3 shadow-lg img-fluid"
+                style={{ background: "#fff", padding: "1rem", maxWidth: 320 }}
+              /> */}
+              <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-3"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-gray-100">
+      <section className="py-5 bg-light">
         <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="row row-cols-2 row-cols-md-4 g-4 text-center">
             {stats.map((stat, index) => (
-              <div key={index} className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
-                <div className="text-gray-600">{stat.label}</div>
+              <div key={index} className="col">
+                <div className="p-4 bg-white rounded shadow-sm h-100">
+                  <div className="display-4 fw-bold text-primary mb-2">{stat.value}</div>
+                  <div className="text-muted">{stat.label}</div>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why Choose Google Cloud Section */}
-      <section className="py-16 lg:py-20 bg-white">
+      {/* Why Choose GCP Section */}
+      <section className="py-5 bg-white">
         <div className="container">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-12 lg:mb-0 text-center">
-              <img 
-                src="https://techifysolutions.com/wp-content/uploads/2022/11/pic-2.png" 
-                alt="Google Cloud Benefits" 
-                className="inline-block max-w-xs lg:max-w-md"
+          <div className="row align-items-center">
+            <div className="col-lg-6 mb-4 mb-lg-0 text-center">
+              <img
+                src="https://cloud.google.com/images/social-icon-google-cloud-1200-630.png"
+                alt="GCP Benefits"
+                className="img-fluid"
+                style={{ maxWidth: "200px" }}
               />
             </div>
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Why Choose <span className="text-primary">Google Cloud</span> for Your Project?
-              </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Google Cloud offers a robust, secure, and scalable cloud platform that empowers businesses to innovate and grow. With its cutting-edge technology and global network, your applications will perform at their best.
+            <div className="col-lg-6">
+              <h2 className="display-5 fw-bold mb-4">Why Choose Google Cloud Platform?</h2>
+              <p className="fs-5 mb-4 text-muted">
+                GCP offers world-class infrastructure, advanced analytics, and AI/ML services. Its global network, security, and cost-effectiveness make it a top choice for modern businesses.
               </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="row mt-5">
                 {[
-                  { title: "Scalability", description: "Easily scale your applications up or down based on demand" },
-                  { title: "Flexibility", description: "Choose the right tools and services for your specific needs" },
-                  { title: "Security", description: "Benefit from Google's robust security infrastructure" },
-                  { title: "Global Reach", description: "Serve your users with low-latency access from anywhere in the world" },
-                ].map((feature, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className="mr-4 mt-1 text-primary">
-                      <CheckCircle2 size={24} />
-                    </div>
-                    <div>
-                      <h5 className="font-bold text-lg mb-1">{feature.title}</h5>
-                      <p className="text-gray-600">{feature.description}</p>
+                  { title: "Global Network", desc: "Low-latency, high-availability infrastructure worldwide" },
+                  { title: "AI & Analytics", desc: "Industry-leading AI, ML, and Big Data tools" },
+                  { title: "Security & Compliance", desc: "Enterprise-grade security and compliance certifications" },
+                  { title: "Cost Optimization", desc: "Flexible pricing and smart resource management" },
+                ].map((item, i) => (
+                  <div className="col-md-6 mb-4" key={i}>
+                    <div className="d-flex">
+                      <div className="me-4 text-primary">
+                        <CheckCircle2 size={24} />
+                      </div>
+                      <div>
+                        <h5 className="fw-bold">{item.title}</h5>
+                        <p className="mb-0 text-muted">{item.desc}</p>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -125,46 +147,31 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* Our Services Section */}
-      <section className="py-16 lg:py-20 bg-gray-50">
+      <section className="py-5 bg-light">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Our <span className="text-primary">Google Cloud</span> Services
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive cloud solutions to accelerate your digital transformation
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">Our Google Cloud Services</h2>
+            <p className="lead text-muted mx-auto" style={{ maxWidth: "700px" }}>
+              End-to-end GCP solutions for migration, modernization, and innovation
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="row g-4">
             {[
-              { 
-                icon: <Cloud size={32} className="text-primary" />,
-                title: "Cloud Consulting",
-                description: "Expert guidance to help you design and implement effective cloud strategies."
-              },
-              { 
-                icon: <Cpu size={32} className="text-primary" />,
-                title: "Cloud Migration",
-                description: "Seamless migration of your applications and data to Google Cloud."
-              },
-              { 
-                icon: <Database size={32} className="text-primary" />,
-                title: "Data Analytics",
-                description: "Transform data into insights with our advanced analytics solutions."
-              },
-              { 
-                icon: <Users size={32} className="text-primary" />,
-                title: "Managed Services",
-                description: "Comprehensive management of your cloud environment for optimal performance."
-              },
-            ].map((service, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 hover:border-primary hover:border-opacity-30">
-                <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
-                  {service.icon}
+              { icon: <Cloud size={32} className="text-primary" />, title: "Cloud Consulting", desc: "Strategy, architecture, and roadmap for your GCP journey." },
+              { icon: <Cpu size={32} className="text-primary" />, title: "Migration Services", desc: "Seamless migration of apps, data, and workloads to GCP." },
+              { icon: <Database size={32} className="text-primary" />, title: "Managed GCP Services", desc: "Ongoing management, monitoring, and optimization." },
+              { icon: <Users size={32} className="text-primary" />, title: "Dedicated GCP Teams", desc: "Hire certified GCP engineers for your projects." },
+            ].map((svc, i) => (
+              <div className="col-md-6 col-lg-3" key={i}>
+                <div className="card h-100 border-0 shadow-sm">
+                  <div className="card-body text-center p-4">
+                    <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-4 mx-auto" style={{ width: "60px", height: "60px" }}>
+                      {svc.icon}
+                    </div>
+                    <h4 className="fw-bold mb-3">{svc.title}</h4>
+                    <p className="text-muted">{svc.desc}</p>
+                  </div>
                 </div>
-                <h4 className="font-bold text-xl mb-3">{service.title}</h4>
-                <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
           </div>
@@ -172,52 +179,37 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 lg:py-20 bg-dark text-white">
+      <section className="py-5 bg-dark text-white">
         <div className="container">
-          <div className="flex flex-col lg:flex-row">
-            <div className="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Why Choose <span className="text-primary">CinqueLabs</span> for Google Cloud?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8">
-                Our deep expertise in Google Cloud enables us to deliver solutions that drive efficiency, innovation, and growth.
+          <div className="row">
+            <div className="col-lg-6 mb-4 mb-lg-0">
+              <h2 className="display-5 fw-bold mb-4">Why CinqueLabs for GCP?</h2>
+              <p className="lead mb-5">
+                Our certified GCP engineers deliver secure, scalable, and innovative cloud solutions tailored to your business.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <button className="btn-primary px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-opacity-90">
-                  Get a Free Consultation
-                </button>
-                <button className="btn-outline-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-white hover:text-gray-900">
-                  View Case Studies
-                </button>
+              <div className="d-flex flex-wrap gap-3">
+                <button className="btn btn-primary btn-lg px-4">Get a Free Consultation</button>
+                <button className="btn btn-outline-light btn-lg px-4">View Case Studies</button>
               </div>
             </div>
-            <div className="lg:w-1/2">
-              <div className="space-y-4">
+            <div className="col-lg-6">
+              <div className="accordion" id="whyChooseUsAccordion">
                 {[
-                  { 
-                    title: "Certified GCP Experts", 
-                    content: "Our team includes Google Cloud certified professionals with extensive experience in cloud solutions." 
-                  },
-                  { 
-                    title: "Agile Methodologies", 
-                    content: "We use Agile practices to ensure flexibility, collaboration, and rapid delivery of value." 
-                  },
-                  { 
-                    title: "End-to-End Solutions", 
-                    content: "From consulting to migration to managed services, we provide comprehensive support at every stage." 
-                  },
-                  { 
-                    title: "Customer-Centric Approach", 
-                    content: "We focus on understanding your business goals and tailoring our solutions to meet your unique needs." 
-                  },
-                ].map((item, index) => (
-                  <div key={index} className="bg-gray-800 rounded-lg overflow-hidden">
-                    <button className="w-full px-6 py-4 text-left font-bold text-lg flex justify-between items-center">
-                      {item.title}
-                      <ChevronDown className="transition-transform duration-300" />
-                    </button>
-                    <div className="px-6 pb-4 pt-0">
-                      <p className="text-gray-300">{item.content}</p>
+                  { title: "Certified GCP Experts", content: "Our team consists of Google Cloud-certified engineers with deep industry experience." },
+                  { title: "Agile & Transparent Process", content: "We follow Agile methodologies for flexibility, transparency, and rapid delivery." },
+                  { title: "Quality & Security", content: "Secure coding, code reviews, and automated testing for robust solutions." },
+                  { title: "Ongoing Support", content: "Maintenance and support to keep your GCP applications running smoothly." },
+                ].map((item, idx) => (
+                  <div className="accordion-item border-0 mb-3 rounded overflow-hidden" key={idx}>
+                    <h3 className="accordion-header">
+                      <button className={`accordion-button bg-white text-dark fw-bold fs-5${idx === 0 ? "" : " collapsed"}`} type="button" data-bs-toggle="collapse" data-bs-target={`#collapseGCP${idx}`}>
+                        {item.title}
+                      </button>
+                    </h3>
+                    <div id={`collapseGCP${idx}`} className={`accordion-collapse collapse${idx === 0 ? " show" : ""}`} data-bs-parent="#whyChooseUsAccordion">
+                      <div className="accordion-body bg-white">
+                        {item.content}
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -228,53 +220,38 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-5 bg-white">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Our Google Cloud <span className="text-primary">Technology Stack</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Leveraging the latest Google Cloud technologies to build scalable and efficient solutions
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">Our GCP Technology Stack</h2>
+            <p className="lead text-muted mx-auto" style={{ maxWidth: "700px" }}>
+              Leveraging the latest Google Cloud technologies for robust solutions
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="row g-4">
             {[
-              { 
-                icon: <Cloud size={32} className="text-primary" />,
-                title: "Compute Services",
-                items: ["Compute Engine", "App Engine", "Cloud Functions", "Cloud Run"]
-              },
-              { 
-                icon: <Palette size={32} className="text-primary" />,
-                title: "UI/UX Tools",
-                items: ["Material Design", "Figma", "Adobe XD", "Sketch"]
-              },
-              { 
-                icon: <Database size={32} className="text-primary" />,
-                title: "Database Services",
-                items: ["Cloud SQL", "Firestore", "BigQuery", "Cloud Spanner"]
-              },
-              { 
-                icon: <Cpu size={32} className="text-primary" />,
-                title: "DevOps Tools",
-                items: ["Cloud Build", "Container Registry", "Cloud Monitoring", "Cloud Logging"]
-              },
-            ].map((stack, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-primary hover:border-opacity-50 transition-all">
-                <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-xl flex items-center justify-center mb-6">
-                  {stack.icon}
+              { icon: <Cloud size={32} className="text-primary" />, title: "Core Services", items: ["Compute Engine", "App Engine", "Cloud Functions", "Cloud Run"] },
+              { icon: <Palette size={32} className="text-primary" />, title: "DevOps & Tools", items: ["Cloud Build", "Kubernetes Engine", "Docker", "Terraform"] },
+              { icon: <Database size={32} className="text-primary" />, title: "Data & AI", items: ["BigQuery", "Cloud SQL", "Firestore", "AI Platform"] },
+              { icon: <Users size={32} className="text-primary" />, title: "Collaboration", items: ["Cloud IAM", "Cloud Monitoring", "Cloud Logging", "Cloud Storage"] },
+            ].map((stack, i) => (
+              <div className="col-md-6 col-lg-3" key={i}>
+                <div className="card h-100 border-0 shadow-sm">
+                  <div className="card-body text-center p-4">
+                    <div className="bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex align-items-center justify-content-center mb-4" style={{ width: "80px", height: "80px" }}>
+                      {stack.icon}
+                    </div>
+                    <h4 className="fw-bold mb-3">{stack.title}</h4>
+                    <ul className="list-unstyled text-muted">
+                      {stack.items.map((item, j) => (
+                        <li className="mb-2" key={j}>
+                          <CheckCircle2 size={16} className="me-2 text-primary" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <h4 className="font-bold text-xl mb-4">{stack.title}</h4>
-                <ul className="space-y-2">
-                  {stack.items.map((item, i) => (
-                    <li key={i} className="flex items-center text-gray-600">
-                      <CheckCircle2 size={16} className="mr-2 text-primary" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
@@ -282,14 +259,14 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* Technology Partners Section */}
-      <section className="py-12 bg-gray-100">
+      <section className="py-5 bg-light">
         <div className="container">
-          <h3 className="text-center text-xl text-gray-600 mb-8">Partners in Innovation</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+          <h3 className="text-center fs-5 text-muted mb-5">Our Technology Partners</h3>
+          <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 gap-md-5 flex-row">
             {technologies.map((tech, index) => (
-              <div key={index} className="flex items-center gap-2 text-gray-700 hover:text-primary transition-colors">
+              <div key={index} className="d-flex align-items-center gap-2 text-dark">
                 {tech.icon}
-                <span className="font-medium">{tech.name}</span>
+                <span className="fw-medium" style={{fontSize: 16}}>{tech.name}</span>
               </div>
             ))}
           </div>
@@ -297,50 +274,42 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* Hire Developers Section */}
-      <section className="py-16 lg:py-20">
+      <section className="py-5">
         <div className="container">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
-              <img 
-                src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-                alt="Hire Google Cloud Developers" 
-                className="w-full rounded-xl shadow-lg"
+          <div className="row align-items-center">
+            <div className="col-lg-6 mb-4 mb-lg-0">
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+                alt="Hire GCP Developers"
+                className="img-fluid rounded-3 shadow-lg"
               />
             </div>
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Hire Dedicated <span className="text-primary">Google Cloud Developers</span>
-              </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Strengthen your team with our experienced Google Cloud developers, available for flexible engagement models.
+            <div className="col-lg-6">
+              <h2 className="display-5 fw-bold mb-4">Hire Dedicated GCP Developers</h2>
+              <p className="lead text-muted mb-5">
+                Augment your team with our certified Google Cloud engineers for full-time or part-time projects.
               </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="row g-4">
                 {[
-                  { title: "Flexible Engagements", description: "Hire developers on an hourly, part-time, or full-time basis" },
-                  { title: "Quick Start", description: "Developers can be onboarded within 48 hours" },
-                  { title: "Expertise on Demand", description: "Access to a pool of skilled Google Cloud professionals" },
-                  { title: "Transparent Pricing", description: "No hidden costs, clear and predictable billing" },
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className="mr-4 mt-1 text-primary">
-                      <CheckCircle2 size={24} />
-                    </div>
-                    <div>
-                      <h5 className="font-bold text-lg mb-1">{item.title}</h5>
-                      <p className="text-gray-600">{item.description}</p>
+                  { title: "Flexible Hiring Models", desc: "Hourly, monthly, or full-time contracts" },
+                  { title: "Quick Onboarding", desc: "Developers ready to start in 48 hours" },
+                  { title: "Dedicated Resources", desc: "Work exclusively on your project" },
+                  { title: "Daily Reporting", desc: "Transparent progress updates" },
+                ].map((item, i) => (
+                  <div className="col-md-6" key={i}>
+                    <div className="d-flex">
+                      <div className="me-3 text-primary"><CheckCircle2 size={24} /></div>
+                      <div>
+                        <h5 className="fw-bold">{item.title}</h5>
+                        <p className="text-muted mb-0">{item.desc}</p>
+                      </div>
                     </div>
                   </div>
                 ))}
               </div>
-              
-              <div className="flex flex-wrap gap-4">
-                <button className="btn-primary px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-opacity-90">
-                  Hire Developers
-                </button>
-                <button className="btn-outline px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-gray-100">
-                  View Profiles
-                </button>
+              <div className="mt-5">
+                <button className="btn btn-primary btn-lg px-4 me-3">Hire Developers</button>
+                <button className="btn btn-outline-secondary btn-lg px-4">View Profiles</button>
               </div>
             </div>
           </div>
@@ -348,46 +317,31 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 lg:py-20 bg-dark text-white">
+      <section className="py-5 bg-dark text-white">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Our <span className="text-primary">Google Cloud Process</span>
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              A structured approach to ensure successful cloud adoption and implementation
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">Our GCP Development Process</h2>
+            <p className="lead text-white-50 mx-auto" style={{ maxWidth: "700px" }}>
+              A proven methodology that ensures quality and timely delivery
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="row g-4">
             {[
-              { 
-                step: "1",
-                title: "Consultation",
-                description: "Understanding your business needs and defining cloud strategy."
-              },
-              { 
-                step: "2",
-                title: "Planning",
-                description: "Creating a detailed project plan, including timeline and resources."
-              },
-              { 
-                step: "3",
-                title: "Implementation",
-                description: "Executing the migration and deployment of applications on Google Cloud."
-              },
-              { 
-                step: "4",
-                title: "Optimization",
-                description: "Fine-tuning performance, security, and cost-efficiency of your cloud environment."
-              },
-            ].map((process, index) => (
-              <div key={index} className="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-primary hover:border-opacity-50 transition-all">
-                <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 text-primary text-2xl font-bold">
-                  {process.step}
+              { step: "1", title: "Discovery", desc: "We analyze requirements, define scope, and plan the project roadmap." },
+              { step: "2", title: "Design", desc: "We create architecture diagrams, prototypes, and UI/UX designs for your approval." },
+              { step: "3", title: "Development", desc: "Our engineers build your solution using Agile sprints with regular demos." },
+              { step: "4", title: "Deployment", desc: "We deploy the application, provide training, and offer ongoing support." },
+            ].map((proc, i) => (
+              <div className="col-md-6 col-lg-3" key={i}>
+                <div className="card h-100 bg-dark border-secondary">
+                  <div className="card-body text-center p-4">
+                    <div className="bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{ width: "60px", height: "60px" }}>
+                      <span className="fs-4 fw-bold">{proc.step}</span>
+                    </div>
+                    <h4 className="fw-bold mb-3 text-white">{proc.title}</h4>
+                    <p className="text-white-50">{proc.desc}</p>
+                  </div>
                 </div>
-                <h4 className="font-bold text-xl mb-3 text-white">{process.title}</h4>
-                <p className="text-gray-300">{process.description}</p>
               </div>
             ))}
           </div>
@@ -395,57 +349,55 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-16 lg:py-20 bg-gray-50">
+      <section className="py-5 bg-light">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Our <span className="text-primary">Google Cloud Projects</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">Our GCP Projects</h2>
+            <p className="lead text-muted mx-auto" style={{ maxWidth: "700px" }}>
               Discover how we've enabled businesses to thrive with Google Cloud
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="row g-4">
             {[
               {
                 title: "E-commerce Migration",
-                description: "Migrated a high-traffic e-commerce platform to Google Cloud, improving scalability and reducing costs.",
+                description: "Migrated a high-traffic e-commerce site to GCP, improving performance and scalability.",
                 image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                tags: ["GCP", "Compute Engine", "Cloud SQL"]
+                tags: ["GCP", "Migration", "E-commerce"]
               },
               {
                 title: "Real-time Analytics Platform",
-                description: "Developed a real-time data analytics platform using BigQuery and Data Studio, enabling instant insights.",
+                description: "Developed a real-time analytics solution on GCP for a leading retail client.",
                 image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                tags: ["GCP", "BigQuery", "Data Studio"]
+                tags: ["GCP", "Data Analytics", "Retail"]
               },
               {
-                title: "Healthcare Application",
-                description: "Built a secure, HIPAA-compliant healthcare application on Google Cloud, ensuring data privacy and security.",
+                title: "SaaS Application Development",
+                description: "Built a multi-tenant SaaS application on GCP, leveraging Kubernetes Engine.",
                 image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                tags: ["GCP", "App Engine", "Cloud Firestore"]
+                tags: ["GCP", "Kubernetes", "SaaS"]
               }
             ].map((project, index) => (
-              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all">
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-                <div className="p-6">
-                  <h3 className="font-bold text-xl mb-2">{project.title}</h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, i) => (
-                      <span key={i} className="bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full">
-                        {tag}
-                      </span>
-                    ))}
+              <div key={index} className="col-md-4">
+                <div className="bg-white rounded-3 overflow-hidden shadow-sm">
+                  <img src={project.image} alt={project.title} className="w-100 h-50 object-cover" />
+                  <div className="p-4">
+                    <h3 className="fw-bold mb-2">{project.title}</h3>
+                    <p className="text-muted mb-3">{project.description}</p>
+                    <div className="d-flex flex-wrap gap-2">
+                      {project.tags.map((tag, i) => (
+                        <span key={i} className="badge bg-secondary text-dark rounded-pill px-3 py-1">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          
-          <div className="text-center mt-12">
-            <button className="btn-outline px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-gray-100">
+          <div className="text-center mt-5">
+            <button className="btn btn-outline-primary btn-lg px-4 py-2 rounded-pill fw-semibold">
               View All Case Studies
             </button>
           </div>
@@ -453,53 +405,32 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-5 bg-white">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              What Our <span className="text-primary">Clients Say</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">What Our Clients Say</h2>
+            <p className="lead text-muted mx-auto" style={{ maxWidth: "700px" }}>
               Trusted by startups and enterprises for Google Cloud solutions
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                quote: "CinqueLabs transformed our cloud infrastructure with their Google Cloud expertise. Our application performance has improved dramatically.",
-                name: "Emily Carter",
-                role: "CTO, InnovateTech",
-                image: "https://randomuser.me/api/portraits/women/32.jpg",
-                rating: 5
-              },
-              {
-                quote: "The team at CinqueLabs is highly skilled and professional. They helped us migrate to Google Cloud with zero downtime.",
-                name: "James Smith",
-                role: "IT Director, RetailCorp",
-                image: "https://randomuser.me/api/portraits/men/44.jpg",
-                rating: 5
-              },
-              {
-                quote: "We rely on CinqueLabs for our Google Cloud management. Their proactive approach and expertise give us peace of mind.",
-                name: "Maria Garcia",
-                role: "Operations Manager, HealthPlus",
-                image: "https://randomuser.me/api/portraits/women/75.jpg",
-                rating: 5
-              }
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl">
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={20} className="text-yellow-400 fill-yellow-400 mr-1" />
-                  ))}
-                </div>
-                <p className="text-gray-700 italic mb-6">"{testimonial.quote}"</p>
-                <div className="flex items-center">
-                  <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
-                  <div>
-                    <h5 className="font-bold">{testimonial.name}</h5>
-                    <p className="text-gray-600 text-sm">{testimonial.role}</p>
+          <div className="row g-4">
+            {testimonials.map((t, i) => (
+              <div key={i} className="col-md-4">
+                <div className="card h-100 border-0 shadow-sm">
+                  <div className="card-body p-4">
+                    <div className="d-flex mb-3">
+                      {[...Array(t.rating)].map((_, j) => (
+                        <Star key={j} size={20} className="text-warning me-1" style={{fill: 'currentColor'}} />
+                      ))}
+                    </div>
+                    <p className="mb-4">"{t.quote}"</p>
+                    <div className="d-flex align-items-center">
+                      <img src={t.image} className="rounded-circle me-3" width="50" height="50" alt={t.name} />
+                      <div>
+                        <h6 className="mb-0 fw-bold">{t.name}</h6>
+                        <small className="text-muted">{t.role}</small>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -509,20 +440,20 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-primary text-white">
+      <section className="py-5 bg-primary text-white">
         <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Ready to Elevate Your <span className="text-secondary">Google Cloud Journey</span>?
+          <div className="col-lg-8 mx-auto text-center">
+            <h2 className="display-5 fw-bold mb-4">
+              Ready to Elevate Your Business with <span className="text-warning">Google Cloud</span>?
             </h2>
-            <p className="text-xl mb-8 max-w-3xl mx-auto">
-              Contact us today to discuss how our Google Cloud services can benefit your business.
+            <p className="lead mb-4">
+              Contact us today to discuss your project requirements and get a free quote.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <button className="btn-white px-8 py-3 rounded-lg text-lg font-semibold text-primary transition-all hover:bg-opacity-90">
+            <div className="d-flex flex-wrap justify-content-center gap-3">
+              <button className="btn btn-light btn-lg px-4 py-2 rounded-pill fw-semibold text-primary">
                 Get a Free Quote
               </button>
-              <button className="btn-outline-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-white hover:bg-opacity-10">
+              <button className="btn btn-outline-light btn-lg px-4 py-2 rounded-pill fw-semibold">
                 Schedule a Call
               </button>
             </div>
@@ -531,48 +462,60 @@ const GoogleCloudPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-20 bg-gray-50">
+      <section className="py-5 bg-light">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Frequently Asked <span className="text-primary">Questions</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Common queries about our Google Cloud services answered
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
+            <p className="lead text-muted mx-auto" style={{ maxWidth: "700px" }}>
+              Common queries about our Google Cloud services
             </p>
           </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-4">
+          <div className="col-lg-8 mx-auto">
+            <div className="accordion" id="faqAccordion">
               {[
                 {
                   question: "What is Google Cloud Platform?",
-                  answer: "Google Cloud Platform (GCP) is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products, such as Google Search and YouTube. GCP provides a range of services including computing, data storage, data analytics, and machine learning."
+                  answer: "GCP is Google's suite of cloud computing services, offering compute, storage, AI, analytics, and more for businesses of all sizes."
                 },
                 {
-                  question: "How can CinqueLabs help with Google Cloud?",
-                  answer: "CinqueLabs offers end-to-end Google Cloud services including cloud consulting, migration, implementation, and managed services. Our team of GCP certified experts will work with you to design and implement cloud solutions that meet your business objectives."
+                  question: "Can you migrate our existing infrastructure to GCP?",
+                  answer: "Yes, we provide seamless migration services for applications, databases, and workloads to Google Cloud."
                 },
                 {
-                  question: "Is Google Cloud secure?",
-                  answer: "Yes, Google Cloud is designed with a security-first approach, providing multiple layers of security to protect your data and applications. GCP is compliant with major security standards and regulations, and offers tools for identity and access management, data encryption, and threat detection."
+                  question: "Do you offer managed GCP services?",
+                  answer: "Absolutely. We provide ongoing management, monitoring, optimization, and support for your GCP environment."
                 },
                 {
-                  question: "What industries do you serve?",
-                  answer: "We provide Google Cloud solutions across various industries including healthcare, finance, retail, education, and more. Our expertise enables us to deliver tailored solutions that address the unique challenges and requirements of different industries."
+                  question: "How do you ensure security and compliance?",
+                  answer: "We follow GCP best practices, implement IAM, encryption, and compliance controls to protect your data and workloads."
                 },
                 {
-                  question: "Can you assist with cloud cost management?",
-                  answer: "Absolutely. We help businesses optimize their cloud spending by implementing cost-effective cloud architectures, utilizing committed use contracts, and providing ongoing monitoring and optimization of cloud resources."
+                  question: "Can I hire dedicated GCP engineers?",
+                  answer: "Yes, you can hire our certified GCP experts on a dedicated, full-time, or part-time basis."
                 }
               ].map((faq, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
-                  <button className="w-full flex justify-between items-center text-left font-bold text-lg">
-                    <span>{faq.question}</span>
-                    <ChevronDown className="transition-transform duration-300" />
-                  </button>
-                  <div className="mt-4 text-gray-600">
-                    {faq.answer}
+                <div key={index} className="accordion-item">
+                  <h2 className="accordion-header" id={`faqHeading-${index}`}>
+                    <button
+                      className="accordion-button collapsed fw-bold fs-5"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target={`#faqCollapse-${index}`}
+                      aria-expanded="false"
+                      aria-controls={`faqCollapse-${index}`}
+                    >
+                      {faq.question}
+                    </button>
+                  </h2>
+                  <div
+                    id={`faqCollapse-${index}`}
+                    className="accordion-collapse collapse"
+                    aria-labelledby={`faqHeading-${index}`}
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div className="accordion-body text-muted">
+                      {faq.answer}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -581,110 +524,63 @@ const GoogleCloudPage = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="py-12 bg-dark text-white">
+      {/* Footer Section */}
+      <footer className="bg-dark text-white py-5">
         <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-bold mb-2">Ready to start your cloud project?</h3>
-              <p className="text-gray-300">Contact our Google Cloud experts today</p>
+          <div className="row g-4">
+            <div className="col-lg-4">
+              <h5 className="fw-bold mb-4">CinqueLabs</h5>
+              <p>Delivering cutting-edge software solutions with Node.js and modern web technologies since 2015.</p>
+              <div className="social-icons mt-4">
+                <a href="#" className="text-white me-3"><i className="fab fa-twitter fa-lg"></i></a>
+                <a href="#" className="text-white me-3"><i className="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" className="text-white me-3"><i className="fab fa-github fa-lg"></i></a>
+                <a href="#" className="text-white"><i className="fab fa-youtube fa-lg"></i></a>
+              </div>
             </div>
-            <button className="btn-primary px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-opacity-90">
-              Contact Us Now
-            </button>
+            <div className="col-lg-2 col-md-6">
+              <h6 className="fw-bold mb-4">Company</h6>
+              <ul className="list-unstyled">
+                <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">About Us</a></li>
+                <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Careers</a></li>
+                <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Blog</a></li>
+                <li><a href="#" className="text-white-50 text-decoration-none">Contact</a></li>
+              </ul>
+            </div>
+            <div className="col-lg-2 col-md-6">
+              <h6 className="fw-bold mb-4">Services</h6>
+              <ul className="list-unstyled">
+                <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Web Development</a></li>
+                <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Mobile Apps</a></li>
+                <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Cloud Solutions</a></li>
+                <li><a href="#" className="text-white-50 text-decoration-none">DevOps</a></li>
+              </ul>
+            </div>
+            <div className="col-lg-4">
+              <h6 className="fw-bold mb-4">Newsletter</h6>
+              <p className="text-white-50">Subscribe to our newsletter for the latest in Node.js and web development.</p>
+              <form className="mt-3" onSubmit={handleNewsletterSubmit}>
+                <div className="input-group">
+                  <input type="email" className="form-control" placeholder="Your email" required />
+                  <button className="btn btn-primary" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <hr className="my-4 bg-secondary" />
+          <div className="row">
+            <div className="col-md-6 text-center text-md-start">
+              <p className="mb-0 text-white-50 small">© {new Date().getFullYear()} CinqueLabs. All rights reserved.</p>
+            </div>
+            <div className="col-md-6 text-center text-md-end">
+              <a href="#" className="text-white-50 text-decoration-none small me-3">Privacy Policy</a>
+              <a href="#" className="text-white-50 text-decoration-none small">Terms of Service</a>
+            </div>
           </div>
         </div>
-      </section>
-
-      <Footer handleNewsletterSubmit={handleNewsletterSubmit} />
+      </footer>
     </div>
   );
 };
 
-const Footer = ({ handleNewsletterSubmit }) => (
-  <footer className="bg-dark text-white py-5">
-    <div className="container">
-      <div className="row g-4">
-        <div className="col-lg-4">
-          <h5 className="fw-bold mb-4">CinqueLabs</h5>
-          <p>Delivering cutting-edge software solutions with Node.js and modern web technologies since 2015.</p>
-          <div className="social-icons mt-4">
-            <a href="#" className="text-white me-3"><i className="fab fa-twitter fa-lg"></i></a>
-            <a href="#" className="text-white me-3"><i className="fab fa-linkedin fa-lg"></i></a>
-            <a href="#" className="text-white me-3"><i className="fab fa-github fa-lg"></i></a>
-            <a href="#" className="text-white"><i className="fab fa-youtube fa-lg"></i></a>
-          </div>
-        </div>
-        <div className="col-lg-2 col-md-6">
-          <h6 className="fw-bold mb-4">Company</h6>
-          <ul className="list-unstyled">
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">About Us</a></li>
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Careers</a></li>
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Blog</a></li>
-            <li><a href="#" className="text-white-50 text-decoration-none">Contact</a></li>
-          </ul>
-        </div>
-        <div className="col-lg-2 col-md-6">
-          <h6 className="fw-bold mb-4">Services</h6>
-          <ul className="list-unstyled">
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Web Development</a></li>
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Mobile Apps</a></li>
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Cloud Solutions</a></li>
-            <li><a href="#" className="text-white-50 text-decoration-none">DevOps</a></li>
-          </ul>
-        </div>
-        <div className="col-lg-4">
-          <h6 className="fw-bold mb-4">Newsletter</h6>
-          <p className="text-white-50">Subscribe to our newsletter for the latest in Node.js and web development.</p>
-          <form className="mt-3" onSubmit={handleNewsletterSubmit}>
-            <div className="input-group">
-              <input type="email" className="form-control" placeholder="Your email" required />
-              <button className="btn btn-primary" type="submit">Subscribe</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <hr className="my-4 bg-secondary" />
-      <div className="row">
-        <div className="col-md-6 text-center text-md-start">
-          <p className="mb-0 text-white-50 small">© {new Date().getFullYear()} CinqueLabs. All rights reserved.</p>
-        </div>
-        <div className="col-md-6 text-center text-md-end">
-          <a href="#" className="text-white-50 text-decoration-none small me-3">Privacy Policy</a>
-          <a href="#" className="text-white-50 text-decoration-none small">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-);
-
 export default GoogleCloudPage;
-
-// Add these styles to your global CSS
-// .btn-primary {
-//   background-color: #3b82f6;
-//   color: white;
-// }
-// .btn-outline {
-//   border: 1px solid #3b82f6;
-//   color: #3b82f6;
-//   background: transparent;
-// }
-// .btn-outline-white {
-//   border: 1px solid white;
-//   color: white;
-//   background: transparent;
-// }
-// .btn-white {
-//   background-color: white;
-//   color: #3b82f6;
-// }
-// .text-primary {
-//   color: #3b82f6;
-// }
-// .bg-dark {
-//   background-color: #1f2937;
-// }
-// .bg-primary {
-//   background-color: #3b82f6;
-// }

@@ -32,20 +32,20 @@ const PythonPage = () => {
             </div>
             <div className="col-lg-6">
               <div className="position-relative">
-                <img 
+                {/* <img 
                   src="https://www.python.org/static/community_logos/python-logo.png" 
                   alt="Python Development" 
                   className="img-fluid rounded-3 shadow-lg"
                   style={{ background: "#fff", padding: "1rem" }}
-                />
+                /> */}
                 <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-3"></div>
               </div>
             </div>
           </div>
         </div>
-        <div className="position-absolute top-0 end-0 h-100 w-50 d-none d-lg-block">
+        <div className="position-absolute top-0 end-0 h-150 w-50 d-none d-lg-block">
           <div className="h-100 w-100 bg-cover bg-center opacity-20" 
-               style={{backgroundImage: "url('https://miro.medium.com/v2/resize:fit:1400/1*LrjUe1T9Q6kQzA6p8rQe6w.png')"}}>
+               style={{backgroundImage: "url('https://cdn-icons-png.flaticon.com/512/5968/5968350.png')"}}>
           </div>
         </div>
       </section>

@@ -49,12 +49,12 @@ const TensorflowPage = () => {
 						</div>
 						<div className="col-lg-6">
 							<div className="position-relative">
-								<img
+								{/* <img
 									src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
 									alt="TensorFlow Development"
 									className="img-fluid rounded-3 shadow-lg"
 									style={{ background: "#fff", padding: "1rem" }}
-								/>
+								/> */}
 								<div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-3"></div>
 							</div>
 						</div>

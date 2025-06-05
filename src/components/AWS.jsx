@@ -8,14 +8,94 @@ const stats = [
 ];
 
 const technologies = [
-  { icon: <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS" className="h-6" />, name: "AWS" },
-  { icon: <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" className="h-6" />, name: "Docker" },
-  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" className="h-6" />, name: "Kubernetes" },
-  { icon: <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" className="h-6" />, name: "Git" },
-  { icon: <img src="https://www.terraform.io/assets/images/og-image-8b3e4f7d.png" alt="Terraform" className="h-6" />, name: "Terraform" },
-  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="Bash" className="h-6" />, name: "Bash" },
-  { icon: <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" className="h-6" />, name: "Python" },
-  { icon: <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Amazon_DynamoDB_logo.png" alt="DynamoDB" className="h-6" />, name: "DynamoDB" },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/amazonaws.svg"
+        alt="AWS"
+        className="h-5"
+        style={{ height: 32, width: 32, objectFit: "contain" }}
+      />
+    ),
+    name: "AWS",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/docker.svg"
+        alt="Docker"
+        className="h-5"
+        style={{ height: 32, width: 32, objectFit: "contain" }}
+      />
+    ),
+    name: "Docker",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kubernetes.svg"
+        alt="Kubernetes"
+        className="h-5"
+        style={{ height: 32, width: 32, objectFit: "contain" }}
+      />
+    ),
+    name: "Kubernetes",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/git.svg"
+        alt="Git"
+        className="h-5"
+        style={{ height: 32, width: 32, objectFit: "contain" }}
+      />
+    ),
+    name: "Git",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/terraform.svg"
+        alt="Terraform"
+        className="h-5"
+        style={{ height: 32, width: 32, objectFit: "contain" }}
+      />
+    ),
+    name: "Terraform",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gnubash.svg"
+        alt="Bash"
+        className="h-5"
+        style={{ height: 32, width: 32, objectFit: "contain" }}
+      />
+    ),
+    name: "Bash",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg"
+        alt="Python"
+        className="h-5"
+        style={{ height: 32, width: 32, objectFit: "contain" }}
+      />
+    ),
+    name: "Python",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/amazondynamodb.svg"
+        alt="DynamoDB"
+        className="h-5"
+        style={{ height: 32, width: 32, objectFit: "contain" }}
+      />
+    ),
+    name: "DynamoDB",
+  },
 ];
 
 const AWSPage = () => {
@@ -31,49 +111,51 @@ const AWSPage = () => {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="hero-section bg-gradient-to-r from-gray-900 to-gray-800 text-white relative overflow-hidden py-16 lg:py-24">
-        <div className="absolute inset-0 z-0 opacity-20">
-          <div className="absolute top-0 right-0 h-full w-1/2 bg-[url('https://techifysolutions.com/wp-content/uploads/2022/11/AWS-1.webp')] bg-cover bg-center"></div>
+      <section className="hero-section bg-dark text-white position-relative overflow-hidden py-5 py-lg-6">
+        <div className="position-absolute top-0 end-0 h-100 w-50 opacity-20">
+          <div className="position-absolute top-0 end-0 h-100 w-100 bg-cover bg-fit" style={{ backgroundImage: "url('/aws.jpeg')" }}></div>
         </div>
         
-        <div className="container relative z-10">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-12 lg:mb-0">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <div className="container position-relative z-10">
+          <div className="row align-items-center">
+            <div className="col-lg-6 mb-5 mb-lg-0">
+              <h1 className="display-4 fw-bold mb-4">
                 AWS Cloud <span className="text-primary">Services</span>
               </h1>
-              <p className="text-xl text-gray-300 mb-8 max-w-lg">
+              <p className="fs-5 text-light mb-4">
                 Leverage the power of AWS with CinqueLabs. Our expert AWS engineers deliver scalable, reliable, and secure cloud solutions tailored to your business needs.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <button className="btn-primary px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-opacity-90">
+              <div className="d-flex flex-wrap gap-3">
+                <button className="btn btn-primary btn-lg px-4 py-3 fw-semibold">
                   Get Started
                 </button>
-                <button className="btn-outline-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-white hover:text-gray-900">
+                <button className="btn btn-outline-light btn-lg px-4 py-3 fw-semibold">
                   Learn More
                 </button>
               </div>
             </div>
-            <div className="lg:w-1/2 relative">
-              <img 
-                src="https://techifysolutions.com/wp-content/uploads/2022/11/AWS-2.webp" 
+            <div className="col-lg-6 position-relative">
+              {/* <img 
+                src="/aws.jpeg" 
                 alt="AWS Cloud Services" 
-                className="w-full rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-primary opacity-10 rounded-xl"></div>
+                className="w-100 rounded-3 shadow-lg img-fluid"
+              /> */}
+              <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-3"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-gray-100">
+      <section className="py-5 bg-light">
         <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="row g-3 text-center">
             {stats.map((stat, index) => (
-              <div key={index} className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
-                <div className="text-gray-600">{stat.label}</div>
+              <div key={index} className="col-6 col-md-3">
+                <div className="p-4 bg-white rounded-3 shadow-sm hover-shadow">
+                  <div className="fs-1 fw-bold text-primary mb-2">{stat.value}</div>
+                  <div className="text-muted">{stat.label}</div>
+                </div>
               </div>
             ))}
           </div>
@@ -81,38 +163,38 @@ const AWSPage = () => {
       </section>
 
       {/* Why Choose AWS Section */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-5 py-lg-6 bg-white">
         <div className="container">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-12 lg:mb-0 text-center">
+          <div className="row align-items-center">
+            <div className="col-lg-6 mb-5 mb-lg-0 text-center">
               <img 
-                src="https://techifysolutions.com/wp-content/uploads/2022/11/pic-2.png" 
+                src="/aws2.png"
                 alt="AWS Benefits" 
-                className="inline-block max-w-xs lg:max-w-md"
+                className="img-fluid max-w-xs-lg"
               />
             </div>
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <div className="col-lg-6">
+              <h2 className="display-5 fw-bold mb-4">
                 Why Choose <span className="text-primary">AWS</span> for Your Cloud Solutions?
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="fs-5 text-muted mb-4">
                 AWS is the world's most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services from data centers globally. With AWS, you can benefit from a scalable, reliable, and low-cost infrastructure platform in the cloud.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="row g-3">
                 {[
                   { title: "Scalability", description: "Easily scale your infrastructure up or down based on demand" },
                   { title: "Cost-Effective", description: "Pay only for what you use with no upfront expenses" },
                   { title: "Flexibility", description: "Choose the operating system, programming language, and software stack" },
                   { title: "Security", description: "Robust security measures to protect your data and applications" },
                 ].map((feature, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className="mr-4 mt-1 text-primary">
+                  <div key={index} className="col-md-6 d-flex">
+                    <div className="me-3 mt-1 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="font-bold text-lg mb-1">{feature.title}</h5>
-                      <p className="text-gray-600">{feature.description}</p>
+                      <h5 className="fw-bold fs-5 mb-1">{feature.title}</h5>
+                      <p className="text-muted">{feature.description}</p>
                     </div>
                   </div>
                 ))}
@@ -123,18 +205,18 @@ const AWSPage = () => {
       </section>
 
       {/* Our Services Section */}
-      <section className="py-16 lg:py-20 bg-gray-50">
+      <section className="py-5 py-lg-6 bg-light">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">
               Our <span className="text-primary">AWS</span> Cloud Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="fs-5 text-muted mx-auto" style={{ maxWidth: "700px" }}>
               Comprehensive AWS solutions to accelerate your cloud journey
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="row g-4">
             {[
               { 
                 icon: <Cloud size={32} className="text-primary" />,
@@ -157,12 +239,14 @@ const AWSPage = () => {
                 description: "Comprehensive management of your AWS resources for optimal performance."
               },
             ].map((service, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 hover:border-primary hover:border-opacity-30">
-                <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
-                  {service.icon}
+              <div key={index} className="col-md-6 col-lg-3">
+                <div className="bg-white p-4 rounded-3 shadow-sm hover-shadow border border-light border-primary-hover h-100">
+                  <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mb-4">
+                    {service.icon}
+                  </div>
+                  <h4 className="fw-bold fs-4 mb-3">{service.title}</h4>
+                  <p className="text-muted">{service.description}</p>
                 </div>
-                <h4 className="font-bold text-xl mb-3">{service.title}</h4>
-                <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
           </div>
@@ -170,27 +254,27 @@ const AWSPage = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 lg:py-20 bg-dark text-white">
+      <section className="py-5 py-lg-6 bg-dark text-white">
         <div className="container">
-          <div className="flex flex-col lg:flex-row">
-            <div className="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+          <div className="row">
+            <div className="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+              <h2 className="display-5 fw-bold mb-4">
                 Why Choose <span className="text-primary">CinqueLabs</span> for AWS Cloud Services?
               </h2>
-              <p className="text-xl text-gray-300 mb-8">
+              <p className="fs-5 text-light mb-4">
                 Our deep expertise in AWS, combined with our commitment to your success, makes us the ideal partner for your cloud journey.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <button className="btn-primary px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-opacity-90">
+              <div className="d-flex flex-wrap gap-3">
+                <button className="btn btn-primary px-4 py-3 fs-5 fw-semibold">
                   Get a Free Consultation
                 </button>
-                <button className="btn-outline-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-white hover:text-gray-900">
+                <button className="btn btn-outline-light px-4 py-3 fs-5 fw-semibold">
                   View Case Studies
                 </button>
               </div>
             </div>
-            <div className="lg:w-1/2">
-              <div className="space-y-4">
+            <div className="col-lg-6">
+              <div className="accordion" id="whyChooseUsAccordion">
                 {[
                   { 
                     title: "Certified AWS Experts", 
@@ -209,13 +293,27 @@ const AWSPage = () => {
                     content: "From consulting and migration to managed services, we offer a complete suite of AWS solutions." 
                   },
                 ].map((item, index) => (
-                  <div key={index} className="bg-gray-800 rounded-lg overflow-hidden">
-                    <button className="w-full px-6 py-4 text-left font-bold text-lg flex justify-between items-center">
-                      {item.title}
-                      <ChevronDown className="transition-transform duration-300" />
-                    </button>
-                    <div className="px-6 pb-4 pt-0">
-                      <p className="text-gray-300">{item.content}</p>
+                  <div key={index} className="accordion-item bg-gray-800 mb-3 border-0 rounded-3 overflow-hidden">
+                    <h3 className="accordion-header">
+                      <button 
+                        className="accordion-button bg-gray-800 text-white fw-bold fs-5" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target={`#collapse${index}`}
+                        aria-expanded={index === 0 ? "true" : "false"}
+                        aria-controls={`collapse${index}`}
+                      >
+                        {item.title}
+                      </button>
+                    </h3>
+                    <div 
+                      id={`collapse${index}`} 
+                      className={`accordion-collapse collapse ${index === 0 ? "show" : ""}`}
+                      data-bs-parent="#whyChooseUsAccordion"
+                    >
+                      <div className="accordion-body text-light">
+                        {item.content}
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -226,18 +324,18 @@ const AWSPage = () => {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-5 py-lg-6 bg-white">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">
               Our AWS <span className="text-primary">Technology Stack</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="fs-5 text-muted mx-auto" style={{ maxWidth: "700px" }}>
               Leveraging the latest AWS services and tools to deliver robust cloud solutions
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="row g-4">
             {[
               { 
                 icon: <Cloud size={32} className="text-primary" />,
@@ -260,19 +358,21 @@ const AWSPage = () => {
                 items: ["IAM", "Cognito", "GuardDuty", "Inspector"]
               },
             ].map((stack, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-primary hover:border-opacity-50 transition-all">
-                <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-xl flex items-center justify-center mb-6">
-                  {stack.icon}
+              <div key={index} className="col-md-6 col-lg-3">
+                <div className="bg-light p-4 rounded-3 border border-light border-primary-hover h-100">
+                  <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center mb-4">
+                    {stack.icon}
+                  </div>
+                  <h4 className="fw-bold fs-4 mb-3">{stack.title}</h4>
+                  <ul className="list-unstyled">
+                    {stack.items.map((item, i) => (
+                      <li key={i} className="d-flex align-items-center text-muted mb-2">
+                        <CheckCircle2 size={16} className="me-2 text-primary" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h4 className="font-bold text-xl mb-4">{stack.title}</h4>
-                <ul className="space-y-2">
-                  {stack.items.map((item, i) => (
-                    <li key={i} className="flex items-center text-gray-600">
-                      <CheckCircle2 size={16} className="mr-2 text-primary" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
@@ -280,14 +380,30 @@ const AWSPage = () => {
       </section>
 
       {/* Technology Partners Section */}
-      <section className="py-12 bg-gray-100">
+      <section className="py-4 bg-light">
         <div className="container">
-          <h3 className="text-center text-xl text-gray-600 mb-8">Our Technology Partners</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+          <h3 className="text-center text-muted mb-4">Our Technology Partners</h3>
+          <div
+            className="d-flex flex-wrap justify-content-center align-items-center gap-3"
+            style={{ flexWrap: "nowrap", overflowX: "auto" }}
+          >
             {technologies.map((tech, index) => (
-              <div key={index} className="flex items-center gap-2 text-gray-700 hover:text-primary transition-colors">
+              <div
+                key={index}
+                className="d-flex align-items-center gap-2 text-dark px-2 py-1 rounded hover-shadow"
+                style={{
+                  minWidth: 90,
+                  transition: "background 0.2s, box-shadow 0.2s",
+                  cursor: "pointer",
+                  background: "white",
+                  boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
+                  border: "1px solid #f0f0f0",
+                  height: 44,
+                }}
+                title={tech.name}
+              >
                 {tech.icon}
-                <span className="font-medium">{tech.name}</span>
+                <span className="fw-medium" style={{ fontSize: 15 }}>{tech.name}</span>
               </div>
             ))}
           </div>
@@ -295,48 +411,48 @@ const AWSPage = () => {
       </section>
 
       {/* Hire Developers Section */}
-      <section className="py-16 lg:py-20">
+      <section className="py-5 py-lg-6">
         <div className="container">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+          <div className="row align-items-center">
+            <div className="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
               <img 
                 src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
                 alt="Hire AWS Developers" 
-                className="w-full rounded-xl shadow-lg"
+                className="w-100 rounded-3 shadow-lg img-fluid"
               />
             </div>
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <div className="col-lg-6">
+              <h2 className="display-5 fw-bold mb-4">
                 Hire Dedicated <span className="text-primary">AWS Developers</span>
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="fs-5 text-muted mb-4">
                 Augment your team with our senior AWS developers available for full-time or part-time engagements.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="row g-3 mb-4">
                 {[
                   { title: "Flexible Hiring Models", description: "Choose from hourly, monthly, or full-time contracts" },
                   { title: "Quick Onboarding", description: "Developers ready to start in 48 hours" },
                   { title: "Dedicated Resources", description: "Work exclusively on your project" },
                   { title: "Daily Reporting", description: "Transparent progress updates" },
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className="mr-4 mt-1 text-primary">
+                  <div key={index} className="col-md-6 d-flex">
+                    <div className="me-3 mt-1 text-primary">
                       <CheckCircle2 size={24} />
                     </div>
                     <div>
-                      <h5 className="font-bold text-lg mb-1">{item.title}</h5>
-                      <p className="text-gray-600">{item.description}</p>
+                      <h5 className="fw-bold fs-5 mb-1">{item.title}</h5>
+                      <p className="text-muted">{item.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
               
-              <div className="flex flex-wrap gap-4">
-                <button className="btn-primary px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-opacity-90">
+              <div className="d-flex flex-wrap gap-3">
+                <button className="btn btn-primary px-4 py-3 fs-5 fw-semibold">
                   Hire Developers
                 </button>
-                <button className="btn-outline px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-gray-100">
+                <button className="btn btn-outline-primary px-4 py-3 fs-5 fw-semibold">
                   View Profiles
                 </button>
               </div>
@@ -346,18 +462,18 @@ const AWSPage = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 lg:py-20 bg-dark text-white">
+      <section className="py-5 py-lg-6 bg-dark text-white">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">
               Our <span className="text-primary">AWS Development Process</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="fs-5 text-light mx-auto" style={{ maxWidth: "700px" }}>
               A proven methodology that ensures quality and timely delivery
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="row g-4">
             {[
               { 
                 step: "1",
@@ -380,12 +496,14 @@ const AWSPage = () => {
                 description: "We deploy the application, provide training, and offer ongoing support."
               },
             ].map((process, index) => (
-              <div key={index} className="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-primary hover:border-opacity-50 transition-all">
-                <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 text-primary text-2xl font-bold">
-                  {process.step}
+              <div key={index} className="col-md-6 col-lg-3">
+                <div className="bg-gray-800 p-4 rounded-3 border border-gray-700 border-primary-hover h-100">
+                  <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mb-4 text-primary fs-3 fw-bold">
+                    {process.step}
+                  </div>
+                  <h4 className="fw-bold fs-4 mb-3 text-white">{process.title}</h4>
+                  <p className="text-light">{process.description}</p>
                 </div>
-                <h4 className="font-bold text-xl mb-3 text-white">{process.title}</h4>
-                <p className="text-gray-300">{process.description}</p>
               </div>
             ))}
           </div>
@@ -393,18 +511,18 @@ const AWSPage = () => {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-16 lg:py-20 bg-gray-50">
+      <section className="py-5 py-lg-6 bg-light">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">
               Our <span className="text-primary">AWS Projects</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="fs-5 text-muted mx-auto" style={{ maxWidth: "700px" }}>
               See how we've helped businesses achieve their goals with AWS
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="row g-4">
             {[
               {
                 title: "E-commerce Migration",
@@ -425,25 +543,27 @@ const AWSPage = () => {
                 tags: ["AWS", "Amplify", "S3"]
               }
             ].map((project, index) => (
-              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all">
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-                <div className="p-6">
-                  <h3 className="font-bold text-xl mb-2">{project.title}</h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, i) => (
-                      <span key={i} className="bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full">
-                        {tag}
-                      </span>
-                    ))}
+              <div key={index} className="col-md-4">
+                <div className="bg-white rounded-3 overflow-hidden shadow-sm hover-shadow h-100">
+                  <img src={project.image} alt={project.title} className="w-100 h-48 object-cover" />
+                  <div className="p-4">
+                    <h3 className="fw-bold fs-4 mb-2">{project.title}</h3>
+                    <p className="text-muted mb-3">{project.description}</p>
+                    <div className="d-flex flex-wrap gap-2">
+                      {project.tags.map((tag, i) => (
+                        <span key={i} className="badge bg-light text-dark fs-6">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
           
-          <div className="text-center mt-12">
-            <button className="btn-outline px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-gray-100">
+          <div className="text-center mt-5">
+            <button className="btn btn-outline-primary px-4 py-3 fs-5 fw-semibold">
               View All Case Studies
             </button>
           </div>
@@ -451,18 +571,18 @@ const AWSPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-5 py-lg-6 bg-white">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">
               What Our <span className="text-primary">Clients Say</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="fs-5 text-muted mx-auto" style={{ maxWidth: "700px" }}>
               Trusted by startups and Fortune 500 companies worldwide
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="row g-4">
             {[
               {
                 quote: "CinqueLabs delivered an exceptional AWS solution that transformed our business. Their expertise and support were invaluable.",
@@ -486,18 +606,20 @@ const AWSPage = () => {
                 rating: 5
               }
             ].map((testimonial, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl">
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={20} className="text-yellow-400 fill-yellow-400 mr-1" />
-                  ))}
-                </div>
-                <p className="text-gray-700 italic mb-6">"{testimonial.quote}"</p>
-                <div className="flex items-center">
-                  <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
-                  <div>
-                    <h5 className="font-bold">{testimonial.name}</h5>
-                    <p className="text-gray-600 text-sm">{testimonial.role}</p>
+              <div key={index} className="col-md-4">
+                <div className="bg-light p-4 rounded-3 h-100">
+                  <div className="d-flex mb-3">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} size={20} className="text-warning me-1" />
+                    ))}
+                  </div>
+                  <p className="text-muted fst-italic mb-4">"{testimonial.quote}"</p>
+                  <div className="d-flex align-items-center">
+                    <img src={testimonial.image} alt={testimonial.name} className="rounded-circle me-3" width="48" height="48" />
+                    <div>
+                      <h5 className="fw-bold mb-0">{testimonial.name}</h5>
+                      <p className="text-muted small">{testimonial.role}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -507,20 +629,20 @@ const AWSPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-primary text-white">
+      <section className="py-5 py-lg-6 bg-primary text-white">
         <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Ready to Elevate Your Business with <span className="text-secondary">AWS Cloud Solutions</span>?
+          <div className="text-center mx-auto" style={{ maxWidth: "900px" }}>
+            <h2 className="display-5 fw-bold mb-4">
+              Ready to Elevate Your Business with <span className="text-warning">AWS Cloud Solutions</span>?
             </h2>
-            <p className="text-xl mb-8 max-w-3xl mx-auto">
+            <p className="fs-5 mb-4">
               Let's discuss how our AWS expertise can help you achieve your business objectives.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <button className="btn-white px-8 py-3 rounded-lg text-lg font-semibold text-primary transition-all hover:bg-opacity-90">
+            <div className="d-flex flex-wrap justify-content-center gap-3">
+              <button className="btn btn-light px-4 py-3 fs-5 fw-semibold text-primary">
                 Get a Free Quote
               </button>
-              <button className="btn-outline-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-white hover:bg-opacity-10">
+              <button className="btn btn-outline-light px-4 py-3 fs-5 fw-semibold">
                 Schedule a Call
               </button>
             </div>
@@ -529,19 +651,19 @@ const AWSPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 lg:py-20 bg-gray-50">
+      <section className="py-5 py-lg-6 bg-light">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">
               Frequently Asked <span className="text-primary">Questions</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="fs-5 text-muted mx-auto" style={{ maxWidth: "700px" }}>
               Answers to common questions about our AWS cloud services
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-4">
+          <div className="mx-auto" style={{ maxWidth: "900px" }}>
+            <div className="accordion" id="faqAccordion">
               {[
                 {
                   question: "How can AWS benefit my business?",
@@ -564,13 +686,27 @@ const AWSPage = () => {
                   answer: "We provide AWS solutions to a wide range of industries, including healthcare, finance, e-commerce, education, and more. Our team has the expertise to understand your industry-specific requirements and build solutions that address your unique challenges."
                 }
               ].map((faq, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
-                  <button className="w-full flex justify-between items-center text-left font-bold text-lg">
-                    <span>{faq.question}</span>
-                    <ChevronDown className="transition-transform duration-300" />
-                  </button>
-                  <div className="mt-4 text-gray-600">
-                    {faq.answer}
+                <div key={index} className="accordion-item mb-3 border rounded-3 overflow-hidden">
+                  <h3 className="accordion-header">
+                    <button 
+                      className="accordion-button fw-bold fs-5" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target={`#faqCollapse${index}`}
+                      aria-expanded={index === 0 ? "true" : "false"}
+                      aria-controls={`faqCollapse${index}`}
+                    >
+                      {faq.question}
+                    </button>
+                  </h3>
+                  <div 
+                    id={`faqCollapse${index}`} 
+                    className={`accordion-collapse collapse ${index === 0 ? "show" : ""}`}
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div className="accordion-body text-muted">
+                      {faq.answer}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -580,14 +716,14 @@ const AWSPage = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-12 bg-dark text-white">
+      <section className="py-4 bg-dark text-white">
         <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-bold mb-2">Ready to start your cloud project?</h3>
-              <p className="text-gray-300">Get in touch with our AWS experts today</p>
+          <div className="d-md-flex justify-content-between align-items-center">
+            <div className="mb-3 mb-md-0">
+              <h3 className="fs-3 fw-bold mb-2">Ready to start your cloud project?</h3>
+              <p className="text-light mb-0">Get in touch with our AWS experts today</p>
             </div>
-            <button className="btn-primary px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:bg-opacity-90">
+            <button className="btn btn-primary px-4 py-3 fs-5 fw-semibold">
               Contact Us Now
             </button>
           </div>
@@ -599,7 +735,7 @@ const AWSPage = () => {
   );
 };
 
-// Footer component (copied from Nodejs.jsx)
+// Footer component
 const Footer = ({ handleNewsletterSubmit }) => (
   <footer className="bg-dark text-white py-5">
     <div className="container">
@@ -617,24 +753,24 @@ const Footer = ({ handleNewsletterSubmit }) => (
         <div className="col-lg-2 col-md-6">
           <h6 className="fw-bold mb-4">Company</h6>
           <ul className="list-unstyled">
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">About Us</a></li>
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Careers</a></li>
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Blog</a></li>
-            <li><a href="#" className="text-white-50 text-decoration-none">Contact</a></li>
+            <li className="mb-2"><a href="#" className="text-light text-decoration-none">About Us</a></li>
+            <li className="mb-2"><a href="#" className="text-light text-decoration-none">Careers</a></li>
+            <li className="mb-2"><a href="#" className="text-light text-decoration-none">Blog</a></li>
+            <li><a href="#" className="text-light text-decoration-none">Contact</a></li>
           </ul>
         </div>
         <div className="col-lg-2 col-md-6">
           <h6 className="fw-bold mb-4">Services</h6>
           <ul className="list-unstyled">
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Web Development</a></li>
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Mobile Apps</a></li>
-            <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none">Cloud Solutions</a></li>
-            <li><a href="#" className="text-white-50 text-decoration-none">DevOps</a></li>
+            <li className="mb-2"><a href="#" className="text-light text-decoration-none">Web Development</a></li>
+            <li className="mb-2"><a href="#" className="text-light text-decoration-none">Mobile Apps</a></li>
+            <li className="mb-2"><a href="#" className="text-light text-decoration-none">Cloud Solutions</a></li>
+            <li><a href="#" className="text-light text-decoration-none">DevOps</a></li>
           </ul>
         </div>
         <div className="col-lg-4">
           <h6 className="fw-bold mb-4">Newsletter</h6>
-          <p className="text-white-50">Subscribe to our newsletter for the latest in Node.js and web development.</p>
+          <p className="text-light">Subscribe to our newsletter for the latest in Node.js and web development.</p>
           <form className="mt-3" onSubmit={handleNewsletterSubmit}>
             <div className="input-group">
               <input type="email" className="form-control" placeholder="Your email" required />
@@ -646,11 +782,11 @@ const Footer = ({ handleNewsletterSubmit }) => (
       <hr className="my-4 bg-secondary" />
       <div className="row">
         <div className="col-md-6 text-center text-md-start">
-          <p className="mb-0 text-white-50 small">© {new Date().getFullYear()} CinqueLabs. All rights reserved.</p>
+          <p className="mb-0 text-light small">© {new Date().getFullYear()} CinqueLabs. All rights reserved.</p>
         </div>
         <div className="col-md-6 text-center text-md-end">
-          <a href="#" className="text-white-50 text-decoration-none small me-3">Privacy Policy</a>
-          <a href="#" className="text-white-50 text-decoration-none small">Terms of Service</a>
+          <a href="#" className="text-light text-decoration-none small me-3">Privacy Policy</a>
+          <a href="#" className="text-light text-decoration-none small">Terms of Service</a>
         </div>
       </div>
     </div>
@@ -658,32 +794,3 @@ const Footer = ({ handleNewsletterSubmit }) => (
 );
 
 export default AWSPage;
-
-// Add these styles to your global CSS
-// .btn-primary {
-//   background-color: #3b82f6;
-//   color: white;
-// }
-// .btn-outline {
-//   border: 1px solid #3b82f6;
-//   color: #3b82f6;
-//   background: transparent;
-// }
-// .btn-outline-white {
-//   border: 1px solid white;
-//   color: white;
-//   background: transparent;
-// }
-// .btn-white {
-//   background-color: white;
-//   color: #3b82f6;
-// }
-// .text-primary {
-//   color: #3b82f6;
-// }
-// .bg-dark {
-//   background-color: #1f2937;
-// }
-// .bg-primary {
-//   background-color: #3b82f6;
-// }
