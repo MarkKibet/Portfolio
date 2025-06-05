@@ -1,7 +1,9 @@
-import React, { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDown, Code, Phone, Globe, Zap, Database, Cloud, LineChart, ShieldCheck, Layers } from "lucide-react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { Route, Link, Routes } from 'react-router-dom';
+// import ""; // Ensure the correct path
+
+
 
 // Custom CSS for futuristic design with improved text visibility
 const GlobalStyles = () => {
@@ -292,35 +294,12 @@ export default function App() {
     };
   }, []);
   
-  // Lazy load all route components
-const ReactJSPage = React.lazy(() => import('./ReactJS.jsx'));
-const PythonPage = React.lazy(() => import('./Python.jsx'));
-const JavaPage = React.lazy(() => import('./Java.jsx'));
-const AWSPage = React.lazy(() => import('./AWS.jsx'));
-const AzurePage = React.lazy(() => import('./Azure.jsx'));
-const GoogleCloudPage = React.lazy(() => import('./GoogleCloud.jsx'));
-const TensorflowPage = React.lazy(() => import('./Tensorflow.jsx'));
-const PyTorchPage = React.lazy(() => import('./PyTorch.jsx'));
-
   return (
     <div className="app min-vh-100 d-flex flex-column">
       <GlobalStyles />
       <Navbar />
       <main className="flex-grow-1">
-        <Suspense fallback={<div className="text-center py-5">Loading...</div>}>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/ReactJS" element={<ReactJSPage />} />
-            <Route path="/Python" element={<PythonPage />} />
-            <Route path="/Java" element={<JavaPage />} />
-            <Route path="/AWS" element={<AWSPage />} />
-            <Route path="/Azure" element={<AzurePage />} />
-            <Route path="/GoogleCloud" element={<GoogleCloudPage />} />
-            <Route path="/Tensorflow" element={<TensorflowPage />} />
-            <Route path="/PyTorch" element={<PyTorchPage />} />
-            {/* ...add other routes as needed... */}
-          </Routes>
-        </Suspense>
+        <HomePage />
       </main>
       <Footer />
     </div>
@@ -417,23 +396,12 @@ function Navbar() {
     <div className="row">
        <div className="col-md-6"> 
        <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Frontend Development</a></li>
-       <li><Link to="/ReactJS" className="dropdown-menu-item py-3 fw-bold text-light">React.JS</Link></li>
-       <li><Link to="/Angular" className="dropdown-menu-item py-3 fw-bold text-light">Angular</Link></li>
-       <li><Link to="/Vue" className="dropdown-menu-item py-3 fw-bold text-light">Vue</Link></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Backend Systems</a></li>
-    <li><Link to="/Node" className="dropdown-menu-item py-3 fw-bold text-light">Node.JS</Link></li>
-    <li><Link to="/Python" className="dropdown-menu-item py-3 fw-bold text-light">Python</Link></li>
-    <li><Link to="/Java" className="dropdown-menu-item py-3 fw-bold text-light">Java</Link></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Cloud Services</a></li>
-    <li><Link to="/AWS" className="dropdown-menu-item py-3 fw-bold text-light">AWS</Link></li>
-    <li><Link to="/Azure" className="dropdown-menu-item py-3 fw-bold text-light">Azure</Link></li>
-    <li><Link to="/GoogleCloud" className="dropdown-menu-item py-3 fw-bold text-light">Google Cloud</Link></li>
      </div>
    <div className="col-md-6">
      <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Data Analytics</a></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Artificial Intelligence</a></li>
-    <li><Link to="/Tensorflow" className="dropdown-menu-item py-3 fw-bold text-light">TensorFlow</Link></li>
-    <li><Link to="/PyTorch" className="dropdown-menu-item py-3 fw-bold text-light">PyTorch</Link></li>
     </div> 
        </div>
     
